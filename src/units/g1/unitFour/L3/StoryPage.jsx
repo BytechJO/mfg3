@@ -703,7 +703,7 @@ export const StoryPage = () => {
 
         // *** بداية التعديل ***
         if (allCorrectSelected && newWords.length === allCorrectWords.length) {
-          setShowFeedback(true); 
+          setShowFeedback(true);
           setShowBanner(false);
           setTimeout(() => {
             setShowFeedback(false);
@@ -842,6 +842,8 @@ export const StoryPage = () => {
     });
   };
 
+  const isLastSubtitle= activeSubtitleIndex !== -1 && activeSubtitleIndex === currentVideoData.subtitles.length - 1;
+
   return (
     <div className="story-page-container">
       {isLoading && (
@@ -903,8 +905,13 @@ export const StoryPage = () => {
           {showBubble && showSubtitles && activeSubtitle && activeSubtitle.words && (
             <div className="subtitle-container" style={bubbleStyle}>
 
-              <div className={`bubble-cloud animate__animated animate__fadeIn ${bubbleStyle?.isFlipped ? 'flipped' : ''}
-`}>
+              <div
+                className={`bubble-cloud animate__animated animate__fadeIn
+    ${currentVideo === 3 && isLastSubtitle ? "question-bubble" : ""}
+    ${bubbleStyle.isFlipped ? "flipped" : ""}
+  `}
+              >
+
                 <p
                   onMouseDown={handleMouseDown}
                   onMouseUp={handleMouseUp}
@@ -916,6 +923,8 @@ export const StoryPage = () => {
                     const isSelected = selectedWords.some(w =>
                       w.toLowerCase() === cleanWord.toLowerCase()
                     );
+
+                    
 
                     return (
                       <span

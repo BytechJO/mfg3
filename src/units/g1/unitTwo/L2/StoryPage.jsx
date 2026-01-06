@@ -696,7 +696,7 @@ export const StoryPage = () => {
           setShowBanner(false);
           setTimeout(() => {
             setShowFeedback(false);
-            handleNext(); 
+            handleNext();
             setShowBanner(false);
           }, 2000);
         }
@@ -832,6 +832,10 @@ export const StoryPage = () => {
     });
   };
 
+  const isLastSubtitle =
+    activeSubtitleIndex !== -1 &&
+    activeSubtitleIndex === currentVideoData.subtitles.length - 1;
+
   return (
     <div className="story-page-container">
       {isLoading && (
@@ -893,8 +897,12 @@ export const StoryPage = () => {
           {showBubble && showSubtitles && activeSubtitle && activeSubtitle.words && (
             <div className="subtitle-container" style={bubbleStyle}>
 
-              <div className={`bubble-cloud animate__animated animate__fadeIn ${bubbleStyle?.isFlipped ? 'flipped' : ''}
-`}>
+              <div
+                className={`bubble-cloud animate__animated animate__fadeIn
+    ${currentVideo === 2 && isLastSubtitle ? "question-bubble" : ""}
+    ${bubbleStyle.isFlipped ? "flipped" : ""}
+  `}
+              >
                 <p
                   onMouseDown={handleMouseDown}
                   onMouseUp={handleMouseUp}

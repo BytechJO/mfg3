@@ -581,7 +581,7 @@ export const StoryPage = () => {
         );
 
         if (allCorrectSelected && newWords.length === allCorrectWords.length) {
-          setShowFeedback(true); 
+          setShowFeedback(true);
           setShowBanner(false);
           setTimeout(() => {
             setShowFeedback(false);
@@ -686,7 +686,7 @@ export const StoryPage = () => {
     }
   }, [currentVideo, videos.length, navigate, unitId, lessonId, autoPlayNext]);
 
-  
+
 
   const handleWordClick = (word) => {
     const cleanWord = word.toLowerCase().replace(/[.,?!]/g, "");
@@ -719,6 +719,10 @@ export const StoryPage = () => {
       return newWords;
     });
   };
+
+  const isLastSubtitle =
+    activeSubtitleIndex !== -1 &&
+    activeSubtitleIndex === currentVideoData.subtitles.length - 1;
 
   return (
     <div className="story-page-container">
@@ -781,8 +785,12 @@ export const StoryPage = () => {
           {showBubble && showSubtitles && activeSubtitle && activeSubtitle.words && (
             <div className="subtitle-container" style={bubbleStyle}>
 
-              <div className={`bubble-cloud animate__animated animate__fadeIn ${bubbleStyle?.isFlipped ? 'flipped' : ''}
-`}>
+              <div
+                className={`bubble-cloud animate__animated animate__fadeIn
+    ${currentVideo === 3 && isLastSubtitle ? "question-bubble" : ""}
+    ${bubbleStyle.isFlipped ? "flipped" : ""}
+  `}
+              >
                 <p
                   onMouseDown={handleMouseDown}
                   onMouseUp={handleMouseUp}

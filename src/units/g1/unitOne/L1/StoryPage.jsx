@@ -840,7 +840,7 @@ export const StoryPage = () => {
           setTimeout(() => {
             setShowBanner(true);
             setShowFeedback(false);
-            handleNext(); 
+            handleNext();
           }, 2000);
         }
         // *** نهاية التعديل ***
@@ -918,7 +918,7 @@ export const StoryPage = () => {
       document.removeEventListener('mousedown', handleClickOutside);
   }, [showSettingsPopup]);
 
-  
+
 
   const handleEnded = useCallback(() => {
     if (currentVideo === 2) {
@@ -943,6 +943,10 @@ export const StoryPage = () => {
     }
   }, [currentVideo, videos.length, navigate, unitId, lessonId, autoPlayNext]);
 
+
+  const isLastSubtitle =
+    activeSubtitleIndex !== -1 &&
+    activeSubtitleIndex === currentVideoData.subtitles.length - 1;
 
   return (
     <div className="story-page-container">
@@ -1005,8 +1009,12 @@ export const StoryPage = () => {
           {showBubble && showSubtitles && activeSubtitle && activeSubtitle.words && (
             <div className="subtitle-container" style={bubbleStyle}>
 
-              <div className={`bubble-cloud animate__animated animate__fadeIn ${bubbleStyle?.isFlipped ? 'flipped' : ''}
-`}>
+              <div
+                className={`bubble-cloud animate__animated animate__fadeIn
+    ${currentVideo === 2 && isLastSubtitle ? "question-bubble" : ""}
+    ${bubbleStyle.isFlipped ? "flipped" : ""}
+  `}
+              >
                 <p
                   onMouseDown={handleMouseDown}
                   onMouseUp={handleMouseUp}

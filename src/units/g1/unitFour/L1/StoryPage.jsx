@@ -200,43 +200,10 @@ export const StoryPage = () => {
 
         },
         {
-          start: 2.0, end: 4.0,
-          words: [
-            { text: "That’s", start: 2.0, end: 2.3 },
-            { text: "a", start: 2.3, end: 2.6 },
-            { text: "great", start: 2.6, end: 2.9 },
-            { text: "idea,’", start: 2.9, end: 3.2 }
-          ]
         },
         {
-          start: 4.1, end: 8.2,
-          words: [
-            { text: "Also,", start: 4.4, end: 4.7 },
-            { text: "try", start: 4.7, end: 5.0 },
-            { text: "to", start: 5.0, end: 5.3 },
-            { text: "have", start: 5.3, end: 5.6 },
-            { text: "fun", start: 5.6, end: 5.9 },
-            { text: "when", start: 5.9, end: 6.2 },
-            { text: "you’re", start: 6.2, end: 6.5 },
-            { text: "playing", start: 6.5, end: 6.8 },
-            { text: "your", start: 6.8, end: 7.1 },
-            { text: "friend’s", start: 7.1, end: 7.4 },
-            { text: "game", start: 7.4, end: 7.7 },
-            { text: "too", start: 7.7, end: 8.1 },
-          ]
         },
         {
-          start: 8.2, end: 11.0,
-          words: [
-            { text: "you", start: 9.2, end: 9.5 },
-            { text: "should", start: 9.5, end: 9.8 },
-            { text: "enjoy", start: 9.8, end: 10.1 },
-            { text: "each", start: 10.1, end: 10.4 },
-            { text: "other’s", start: 10.4, end: 10.7 },
-            { text: "favourite", start: 10.7, end: 11.0 },
-            { text: "games.", start: 11.0, end: 11.6 }
-          ]
-
         },
       ]
     },
@@ -331,8 +298,8 @@ export const StoryPage = () => {
 
     5: [
       { top: '15%', right: '25%' },
-      { top: '15%', left: '35%', isFlipped: true },
-      { top: '15%', left: '40%', isFlipped: true },
+      { top: '25%', left: '25%', isFlipped: false },
+      { top: '25%', left: '20%', isFlipped: false },
       { top: '15%', right: '25%', isFlipped: false },
       { top: '15%', left: '25%', isFlipped: true },
     ],
@@ -561,7 +528,6 @@ export const StoryPage = () => {
     },
     {
       videoIndex: 4,
-
       start: 0, end: 2.0,
       words: [
         { text: "Milo’s", start: 0.2, end: 0.5 },
@@ -573,6 +539,50 @@ export const StoryPage = () => {
 
 
     },
+    {
+      videoIndex: 4,
+      start: 2.0, end: 4.0,
+      words: [
+        { text: "That’s", start: 2.0, end: 2.3 },
+        { text: "a", start: 2.3, end: 2.6 },
+        { text: "great", start: 2.6, end: 2.9 },
+        { text: "idea,", start: 2.9, end: 3.2 }
+      ]
+    },
+    {
+      videoIndex: 4,
+      start: 4.1, end: 8.2,
+      words: [
+        { text: "Also,", start: 4.4, end: 4.7 },
+        { text: "try", start: 4.7, end: 5.0 },
+        { text: "to", start: 5.0, end: 5.3 },
+        { text: "have", start: 5.3, end: 5.6 },
+        { text: "fun", start: 5.6, end: 5.9 },
+        { text: "when", start: 5.9, end: 6.2 },
+        { text: "you’re", start: 6.2, end: 6.5 },
+        { text: "playing", start: 6.5, end: 6.8 },
+        { text: "your", start: 6.8, end: 7.1 },
+        { text: "friend’s", start: 7.1, end: 7.4 },
+        { text: "game", start: 7.4, end: 7.7 },
+        { text: "too", start: 7.7, end: 8.1 },
+      ]
+    },
+    {
+      videoIndex: 4,
+      start: 8.2, end: 11.0,
+      words: [
+        { text: "you", start: 9.2, end: 9.5 },
+        { text: "should", start: 9.5, end: 9.8 },
+        { text: "enjoy", start: 9.8, end: 10.1 },
+        { text: "each", start: 10.1, end: 10.4 },
+        { text: "other’s", start: 10.4, end: 10.7 },
+        { text: "favourite", start: 10.7, end: 11.0 },
+        { text: "games.", start: 11.0, end: 11.6 }
+      ]
+
+    },
+
+
     {
       videoIndex: 5,
       start: 0.2, end: 4.0,
@@ -821,7 +831,7 @@ export const StoryPage = () => {
 
         // *** بداية التعديل ***
         if (allCorrectSelected && newWords.length === allCorrectWords.length) {
-          setShowFeedback(true); 
+          setShowFeedback(true);
           setShowBanner(false);
           setTimeout(() => {
             setShowFeedback(false);
