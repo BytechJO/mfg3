@@ -779,19 +779,20 @@ body {
   counter-increment: answer;
   display: flex;
   align-items: center;
-  
+  gap: 10px;
 }
 
 .Q1 li::before,
 .Q2 li::before,
 .Q3 li::before
   {
-  content: counter(answer, lower-alpha) ".";
+  content: counter(answer, lower-alpha);
   color: #e2a02d;
+  margin-right: 8px;
 }
 
 .questions {
-  counter-reset: question 0;
+  counter-reset: question 0; 
 }
 
 .questions > div > span {
@@ -800,10 +801,15 @@ body {
 }
 
 .questions > div > span::before {
-  content: counter(question) ". ";
+  content: counter(question) ;
   margin-right: 6px;
   background: #e2a02d;
   border-radius: 60%;
   color: #fff;
-  padding: 2px 2px 3px 6px; 
+  padding: 2px 7px 3px 6px; 
+}
+
+.line-break {
+  display: inline-block;
+  margin-left: 3%;
 }

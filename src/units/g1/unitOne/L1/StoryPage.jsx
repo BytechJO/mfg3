@@ -75,7 +75,7 @@ export const StoryPage = () => {
             { text: "have", start: 14.9, end: 15.2 },
             { text: "a", start: 15.2, end: 15.5 },
             { text: "little", start: 15.5, end: 15.8 },
-            { text: "bit,", start: 15.8, end: 16.1 },
+            { text: "bit.", start: 15.8, end: 16.1 },
           ]
         },
         {
@@ -93,7 +93,7 @@ export const StoryPage = () => {
           start: 28.8, end: 32.3,
           words: [
             { text: "No,", start: 29.0, end: 29.5 },
-            { text: "sorry", start: 29.5, end: 30.0 },
+            { text: "sorry,", start: 29.5, end: 30.0 },
             { text: "I", start: 30.5, end: 30.6 },
             { text: "don't", start: 30.6, end: 30.8 },
             { text: "know", start: 30.8, end: 31.1 },
@@ -106,12 +106,7 @@ export const StoryPage = () => {
         {
           start: 32.3, end: 32.8,
           words: [
-            { text: "Rob", start: 6.4, end: 6.8 },
-            { text: "does", start: 6.8, end: 7.2 },
-            { text: "not", start: 7.2, end: 7.6 },
-            { text: "look", start: 7.6, end: 8.0 },
-            { text: "happy", start: 8.0, end: 8.4 },
-            { text: ", Adam", start: 21.5, end: 21.9 },
+            { text: "Adam", start: 21.5, end: 21.9 },
             { text: "feels", start: 21.9, end: 22.2 },
             { text: "sad", start: 22.2, end: 22.4 },
             { text: "that", start: 22.4, end: 22.6 },
@@ -145,7 +140,7 @@ export const StoryPage = () => {
           words: [
             { text: "Are", start: 0.0, end: 0.3 },
             { text: "you", start: 0.3, end: 0.6 },
-            { text: "okay?'", start: 0.6, end: 0.9 },
+            { text: "okay?", start: 0.6, end: 0.9 },
           ]
         },
         {
@@ -158,7 +153,7 @@ export const StoryPage = () => {
             { text: "to", start: 2.2, end: 2.4 },
             { text: "bring", start: 2.4, end: 2.7 },
             { text: "enough", start: 2.7, end: 3.0 },
-            { text: "salt,", start: 3.0, end: 3.2 },
+            { text: "salt.", start: 3.0, end: 3.2 },
           ]
         },
         {
@@ -178,14 +173,14 @@ export const StoryPage = () => {
             { text: "how", start: 7.5, end: 7.7 },
             { text: "much", start: 7.7, end: 7.9 },
             { text: "you", start: 7.9, end: 8.1 },
-            { text: "needed,", start: 8.1, end: 8.4 },
+            { text: "needed.", start: 8.1, end: 8.4 },
           ]
         },
         {
           start: 14.1, end: 19.0,
           words: [
             { text: "I'm", start: 14.5, end: 14.7 },
-            { text: "sorry", start: 14.7, end: 15.2 },
+            { text: "sorry.", start: 14.7, end: 15.2 },
             { text: "I", start: 16.1, end: 16.2 },
             { text: "took", start: 16.2, end: 16.5 },
             { text: "the", start: 16.5, end: 16.6 },
@@ -194,7 +189,7 @@ export const StoryPage = () => {
             { text: "I", start: 17.1, end: 17.2 },
             { text: "didn't", start: 17.2, end: 17.7 },
             { text: "have", start: 17.7, end: 18.1 },
-            { text: "enough,", start: 18.1, end: 18.5 },
+            { text: "enough.", start: 18.1, end: 18.5 },
           ]
         },
         {
@@ -208,7 +203,7 @@ export const StoryPage = () => {
             { text: "by", start: 21.2, end: 21.5 },
             { text: "telling", start: 21.5, end: 21.8 },
             { text: "the", start: 21.8, end: 22.1 },
-            { text: "truth,", start: 22.1, end: 22.5 },
+            { text: "truth.", start: 22.1, end: 22.5 },
           ]
         },
         {
@@ -271,7 +266,7 @@ export const StoryPage = () => {
             { text: "a", start: 16.1, end: 16.4 },
             { text: "good", start: 16.4, end: 16.7 },
             { text: "idea", start: 16.7, end: 17.0 },
-            { text: "Adam", start: 17.0, end: 17.3 }
+            { text: "Adam.", start: 17.0, end: 17.3 }
           ]
         }
       ]
@@ -291,8 +286,8 @@ export const StoryPage = () => {
             { text: "your", start: 8.25, end: 8.6 },
             { text: "modelling", start: 8.6, end: 8.95 },
             { text: "dough", start: 8.95, end: 9.3 },
-            { text: "now", start: 9.3, end: 9.65 },
-            { text: "Rob", start: 9.65, end: 10.0 }
+            { text: "now,", start: 9.3, end: 9.65 },
+            { text: "Rob.", start: 9.65, end: 10.0 }
           ]
         },
       ]
@@ -316,7 +311,7 @@ export const StoryPage = () => {
       { top: '10%', left: '50%', isFlipped: true },
       { bottom: '80%', left: '18%', transform: 'translateX(-50%)' },
       { top: '10%', left: '20%' },
-      { top: '10%', left: '20%' },
+      { top: '20%', left: '28%' },
     ],
     4: [
       { top: '10%', left: '40%', transform: 'translateX(-50%)', isFlipped: true },
@@ -378,7 +373,7 @@ export const StoryPage = () => {
         { text: "needs", start: 8.3, end: 8.7 },
         { text: "a", start: 8.7, end: 8.9 },
         { text: "scale,", start: 8.9, end: 9.5 },
-        { text: "a bowl", start: 10.0, end: 10.5 },
+        { text: "a bowl,", start: 10.0, end: 10.5 },
         { text: "flour,", start: 11.0, end: 11.5 },
         { text: "water", start: 12.0, end: 12.5 },
         { text: "and", start: 12.9, end: 13.3 },
@@ -674,8 +669,6 @@ export const StoryPage = () => {
     if (nextVideoIndex < videos.length) {
       const nextVideoUrl = videos[nextVideoIndex].url;
       const link = document.createElement('link');
-      link.rel = 'preload';
-      link.as = 'video';
       link.href = nextVideoUrl;
       document.head.appendChild(link);
       return () => {
@@ -689,7 +682,6 @@ export const StoryPage = () => {
     if (!video) return;
 
     if (currentVideo === 2 && isPlaying) {
-      console.log(`Current Time: ${currentTime}, Duration: ${duration}`);
       if (duration > 0 && currentTime >= duration - 0.1) {
         video.pause();
         setShowBanner(true);
@@ -998,10 +990,7 @@ export const StoryPage = () => {
           {currentVideo === 2 && showBanner && (
             <div className={`instruction-banner show ${isFullscreen ? 'fullscreen-banner' : ''}`}>
               <p style={{ fontSize: '1.6em', textAlign: 'left' }}>
-                Highlight how Adam feels when he takes the salt
-              </p>
-              <p style={{ fontSize: '1.6em', textAlign: 'left' }}>
-                and how his feelings change by the end of the story.
+                Highlight how Adam feels when he takes the salt.
               </p>
             </div>
           )}

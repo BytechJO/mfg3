@@ -132,7 +132,7 @@ export const QuizPage = () => {
                 </span>
                 <ul>
                   <li>
-                    <p> Red</p>
+                    <p> Red.</p>
                     <input
                       type="radio"
                       name="q2"
@@ -143,7 +143,7 @@ export const QuizPage = () => {
                     {renderAnswerGif("q2", "0")}
                   </li>
                   <li>
-                    <p> Yellow</p>
+                    <p> Yellow.</p>
                     <input
                       type="radio"
                       name="q2"
@@ -154,7 +154,7 @@ export const QuizPage = () => {
                     {renderAnswerGif("q2", "1")}
                   </li>
                   <li>
-                    <p> Blue</p>
+                    <p> Blue.</p>
                     <input
                       type="radio"
                       name="q2"

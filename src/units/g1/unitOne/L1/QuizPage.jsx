@@ -20,13 +20,14 @@ export const QuizPage = () => {
     setAnswers(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
+  try {
     if (!answers.q1 || !answers.q2 || !answers.q3) {
       ValidationAlert.info("Incomplete", "Please answer all questions before submitting!");
       return;
     }
 
-    const correctAnswers = { q1: "0", q2: "2", q3: "0" };
+    const correctAnswers = { q1: "0", q2: "0", q3: "0" };
     const newResults = {
       q1: answers.q1 === correctAnswers.q1,
       q2: answers.q2 === correctAnswers.q2,
@@ -42,12 +43,17 @@ export const QuizPage = () => {
     const scoreString = `${score}/${totalQuestions}`;
 
     if (score === totalQuestions) {
-      ValidationAlert.success("Good Job!", "", scoreString)
-        .then(() => navigate(`/unit/${unitId}/lesson/${lessonId}/feedBack`));
+      await ValidationAlert.success("Good Job!", "", scoreString);
+      navigate(`/unit/${unitId}/lesson/${lessonId}/feedBack`);
     } else {
       ValidationAlert.error("Try again", "", scoreString);
     }
-  };
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+
 
   const handleTryAgain = () => {
     setAnswers({ q1: null, q2: null, q3: null });
@@ -85,7 +91,7 @@ export const QuizPage = () => {
                 <span>Why did Adam take Rob’s salt?</span>
                 <ul>
                   <li>
-                    <p>He didn’t have enough salt for the project</p>
+                    <p>He didn’t have enough salt for the project.</p>
                     <input type="radio" name="q1" value="0" onChange={handleChange} />
                     {renderAnswerGif('q1', '0')}
                   </li>
@@ -134,7 +140,7 @@ export const QuizPage = () => {
                     {renderAnswerGif('q3', '0')}
                   </li>
                   <li>
-                    <p> To take some salt from another classmate</p>
+                    <p> To take some salt from another classmate.</p>
                     <input type="radio" name="q3" value="1" onChange={handleChange} />
                     {renderAnswerGif('q3', '1')}
                   </li>
@@ -146,7 +152,7 @@ export const QuizPage = () => {
                 </ul>
               </div>
             </div>
-            
+
             {/* أزرار التحكم */}
             <div className="quiz-buttons">
               <button type="button" id="submitBtn" onClick={handleSubmit}>Submit</button>

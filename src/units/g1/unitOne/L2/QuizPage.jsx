@@ -91,7 +91,7 @@ export const QuizPage = () => {
                 <span>What were the group of boys talking about?</span>
                 <ul>
                   <li>
-                    <p> Toy cars </p>
+                    <p> Toy cars. </p>
                     <input
                       type="radio"
                       name="q1"
@@ -102,7 +102,7 @@ export const QuizPage = () => {
                     {renderAnswerGif("q1", "0")}
                   </li>
                   <li>
-                    <p> Video games </p>
+                    <p> Video games. </p>
                     <input
                       type="radio"
                       name="q1"
@@ -113,7 +113,7 @@ export const QuizPage = () => {
                     {renderAnswerGif("q1", "1")}
                   </li>
                   <li>
-                    <p> Dinner </p>
+                    <p> Dinner. </p>
                     <input
                       type="radio"
                       name="q1"
@@ -131,7 +131,7 @@ export const QuizPage = () => {
                 <span>What did Peter do for fun at home?</span>
                 <ul>
                   <li>
-                    <p> Peter put puzzles together </p>
+                    <p> Peter put puzzles together. </p>
                     <input
                       type="radio"
                       name="q2"

@@ -1,28 +1,43 @@
 import { Suspense, lazy, useState } from "react";
-// --- 1. استيراد AnimatePresence و Menu ---
 import { motion, AnimatePresence } from "framer-motion";
-import { Home, PlayCircle, ChevronLeft, Menu } from "lucide-react"; // تم تعديل الاستيرادات
+import { Home, PlayCircle, ChevronLeft, Menu } from "lucide-react";
 import { AnimatedBackground } from "./AnimatedBackground";
 import { AnimatedCharacter } from "./AnimatedCharacter";
 import { useParams, useNavigate } from "react-router-dom";
 import logo from "../assets/PreissMurphy Logo-BGSDEhSA (1).svg";
 
+import One1 from "../units/g1/unitOne/L1/feedBack.jsx";
+import One2 from "../units/g1/unitOne/L2/feedBack.jsx";
+import One3 from "../units/g1/unitOne/L3/feedBack.jsx";
+
+import Two1 from "../units/g1/unitTwo/L1/feedBack.jsx";
+import Two2 from "../units/g1/unitTwo/L2/feedBack.jsx";
+import Two3 from "../units/g1/unitTwo/L3/feedBack.jsx";
+
+import Three1 from "../units/g1/unitThree/L1/feedBack.jsx";
+import Three2 from "../units/g1/unitThree/L2/feedBack.jsx";
+import Three3 from "../units/g1/unitThree/L3/feedBack.jsx";
+
+import Four1 from "../units/g1/unitFour/L1/feedBack.jsx";
+import Four2 from "../units/g1/unitFour/L2/feedBack.jsx";
+import Four3 from "../units/g1/unitFour/L3/feedBack.jsx";
+
 const pages = {
-  "One-1": lazy(() => import("../units/g1/unitOne/L1/feedBack.jsx")),
-  "One-2": lazy(() => import("../units/g1/unitOne/L2/feedBack.jsx")),
-  "One-3": lazy(() => import("../units/g1/unitOne/L3/feedBack.jsx")),
+  "One-1": One1,
+  "One-2": One2,
+  "One-3": One3,
 
-  "Two-1": lazy(() => import("../units/g1/unitTwo/L1/feedBack.jsx")),
-  "Two-2": lazy(() => import("../units/g1/unitTwo/L2/feedBack.jsx")),
-  "Two-3": lazy(() => import("../units/g1/unitTwo/L3/feedBack.jsx")),
+  "Two-1": Two1,
+  "Two-2": Two2,
+  "Two-3": Two3,
 
-  "Three-1": lazy(() => import("../units/g1/unitThree/L1/feedBack.jsx")),
-  "Three-2": lazy(() => import("../units/g1/unitThree/L2/feedBack.jsx")),
-  "Three-3": lazy(() => import("../units/g1/unitThree/L3/feedBack.jsx")),
+  "Three-1": Three1,
+  "Three-2": Three2,
+  "Three-3": Three3,
 
-  "Four-1": lazy(() => import("../units/g1/unitFour/L1/feedBack.jsx")),
-  "Four-2": lazy(() => import("../units/g1/unitFour/L2/feedBack.jsx")),
-  "Four-3": lazy(() => import("../units/g1/unitFour/L3/feedBack.jsx")),
+  "Four-1": Four1,
+  "Four-2": Four2,
+  "Four-3": Four3,
 };
 
 const lessons = [
@@ -73,9 +88,10 @@ const FeedbackWrapper = () => {
             transition={{ delay: 0.3 }}
             className="w-full h-full"
           >
-            <Suspense fallback={<div>Loading...</div>}>
-              <Component />
-            </Suspense>
+            <h1 className="shine-text text-4xl sm:text-5xl font-bold text-center">
+              Unit {unitId}
+            </h1>
+            <Component />
           </motion.div>
         </div>
       </div>
@@ -123,11 +139,10 @@ const FeedbackWrapper = () => {
                   className={`whitespace-nowrap
                 rounded-xl border font-medium transition-all duration-200
                 px-4 py-2 text-sm flex items-center gap-2 
-                ${
-                  Number(lessonId) === l.number
-                    ? `border-[#6B40C8] text-white bg-gradient-to-r ${l.color}`
-                    : "border-[#b99cfa] text-[#6B40C8] hover:bg-purple-50"
-                }
+                ${Number(lessonId) === l.number
+                      ? `border-[#6B40C8] text-white bg-gradient-to-r ${l.color}`
+                      : "border-[#b99cfa] text-[#6B40C8] hover:bg-purple-50"
+                    }
               `}
                 >
                   <PlayCircle className="w-5 h-5" />
@@ -172,11 +187,10 @@ const FeedbackWrapper = () => {
                       <button
                         key={l.number}
                         onClick={() => handleLessonSelect(l.number)}
-                        className={`w-full text-left px-3 py-2 rounded-md text-sm flex items-center gap-3 transition-colors ${
-                          Number(lessonId) === l.number
-                            ? `font-bold text-white bg-gradient-to-r ${l.color}`
-                            : "text-gray-700 hover:bg-gray-100"
-                        }`}
+                        className={`w-full text-left px-3 py-2 rounded-md text-sm flex items-center gap-3 transition-colors ${Number(lessonId) === l.number
+                          ? `font-bold text-white bg-gradient-to-r ${l.color}`
+                          : "text-gray-700 hover:bg-gray-100"
+                          }`}
                       >
                         <PlayCircle className="w-5 h-5" />
                         Lesson {l.number}
