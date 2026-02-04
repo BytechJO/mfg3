@@ -85,12 +85,12 @@ export const QuizPage = () => {
                 <span>Why did Rose need the teacher’s help?</span>
                 <ul>
                   <li>
-                    <p>To help Peter from being bullied.</p>
+                    <p>To stop Peter from being bullied.</p>
                     <input type="radio" name="q1" value="0" onChange={handleChange} />
                     {renderAnswerGif('q1', '0')}
                   </li>
                   <li>
-                    <p>To help her with spelling on the test.</p>
+                    <p>To help her on the spelling test.</p>
                     <input type="radio" name="q1" value="1" onChange={handleChange} />
                     {renderAnswerGif('q1', '1')}
                   </li>
@@ -107,7 +107,7 @@ export const QuizPage = () => {
                 <span>Why was Rose scared to tell the teacher?</span>
                 <ul>
                   <li>
-                    <p> She was scared of being a telltale.</p>
+                    <p> She was scared of the other children.</p>
                     <input type="radio" name="q2" value="0" onChange={handleChange} />
                     {renderAnswerGif('q2', '0')}
                   </li>

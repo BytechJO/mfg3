@@ -79,7 +79,7 @@ export const QuizPage = () => {
 
           <div className="content quizfix">
             <div className="questions">
-              <div className="Q1">
+              <div className="Q1 lg:mt-[-3%]">
                 <span>Why was Ellen unhappy in the shop?</span>
                 <ul>
                   <li>
@@ -101,7 +101,7 @@ export const QuizPage = () => {
               </div>
 
               <div className="Q2">
-                <span>What was the look on the shopkeeper’s face <br /> when Ellen hurt his feelings?</span>
+                <span>What was the look on the shopkeeper’s face <br /> <div className="line-break">when Ellen hurt his feelings?</div></span>
                 <ul>
                   <li>
                     <p> Surprised</p>
@@ -122,7 +122,7 @@ export const QuizPage = () => {
               </div>
 
               <div className="Q3">
-                <span>What did Ellen say to the shopkeeper that made her father happy?</span>
+                <span>What did Ellen say to the shopkeeper that <br /> <div className="line-break"> made her father happy?</div></span>
                 <ul>
                   <li>
                     <p>‘I’m sorry, I was rude before.’</p>

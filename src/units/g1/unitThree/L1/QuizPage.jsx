@@ -79,8 +79,8 @@ export const QuizPage = () => {
           <img src={Q1Image} alt="Background" className="bg-img" />
 
           <div className="content quizfix">
-            <div className="questions">
-              <div className="Q1">
+            <div className="questions text-[92%]">
+              <div className="Q1 lg:mt-[-3%]">
                 <span>How did Liz and Ryan help their parents?</span>
                 <ul>
                   <li>
@@ -102,7 +102,7 @@ export const QuizPage = () => {
               </div>
 
               <div className="Q2">
-                <span>At the beginning of the story Liz and Ryan were <br />watching TV while Mum and Dad cooked. Liz didn’t<br /> think that was _________. </span>
+                <span>At the beginning of the story Liz and Ryan were <br /> <div className="link-break lg:ml-8"> watching TV while Mum and Dad cooked.</div> <div className="link-break lg:ml-8">Liz didn’t think that was _________. </div></span>
                 
                 <ul>
                   <li>
@@ -124,7 +124,7 @@ export const QuizPage = () => {
               </div>
 
               <div className="Q3" >
-                <span>How did Mum and Dad feel at the end of the story?</span>
+                <span>How did Mum and Dad feel at the end of <br /> <div className="link-break lg:ml-8"> the story? </div></span>
                 <ul>
                   <li>
                     <p> Tired</p>
@@ -145,7 +145,7 @@ export const QuizPage = () => {
               </div>
             </div>
             <div className="quiz-buttons">
-              <button type="button" className='fixquizbtn top-[61%]' id="submitBtn" onClick={handleSubmit}>Submit</button>
+              <button type="button" className='fixquizbtn top-[60%]' id="submitBtn" onClick={handleSubmit}>Submit</button>
               {showSkip && <button type="button" className="skip-btn" onClick={handleSkip}>Skip</button>}
               {showTry && <button type="button" className="try-btn" onClick={handleTryAgain}>Try Again</button>}
             </div>

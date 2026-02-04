@@ -24,7 +24,7 @@ function FeedBack() {
       
       <div
         className="stars-container absolute left-[47%] transform -translate-x-1/2 flex flex-col gap-12"
-        style={{ top: '59%' }}
+        style={{ top: '60.5%' }}
       >
         <StarRating value={0} />
         <StarRating value={0} />

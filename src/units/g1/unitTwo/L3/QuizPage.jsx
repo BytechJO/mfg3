@@ -80,21 +80,21 @@ export const QuizPage = () => {
 
           <div className="content">
             <div className="questions">
-              <div className="Q1">
+              <div className="Q1 lg:mt-[-2%]">
                 <span>Who gave Jen her pair of roller skates?</span>
                 <ul>
                   <li>
-                    <p> Her aunt and uncle.</p>
+                    <p> Her aunt and uncle</p>
                     <input type="radio" name="q1" value="0" onChange={handleChange} />
                     {renderAnswerGif('q1', '0')}
                   </li>
                   <li>
-                    <p> Her grandparents.</p>
+                    <p> Her grandparents</p>
                     <input type="radio" name="q1" value="1" onChange={handleChange} />
                     {renderAnswerGif('q1', '1')}
                   </li>
                   <li>
-                    <p> Her friends.</p>
+                    <p> Her friends</p>
                     <input type="radio" name="q1" value="2" onChange={handleChange} />
                     {renderAnswerGif('q1', '2')}
                   </li>
@@ -123,10 +123,10 @@ export const QuizPage = () => {
               </div>
 
               <div className="Q3">
-                <span>What did Jen tell her aunt when she was practising?</span>
+                <span>What did Jen tell her aunt when she was <br /> <div className="line-break"> practising?</div></span>
                 <ul>
                   <li>
-                    <p> ‘I am ready to try again!’</p>
+                    <p> I want a new toy.</p>
                     <input type="radio" name="q3" value="0" onChange={handleChange} />
                     {renderAnswerGif('q3', '0')}
                   </li>

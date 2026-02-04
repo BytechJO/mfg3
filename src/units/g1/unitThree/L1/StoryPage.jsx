@@ -51,7 +51,7 @@ export const StoryPage = () => {
           start: 18.5,
           end: 19.5,
           words: [
-            { text: "‘Hello", start: 18.5, end: 18.7 },
+            { text: "Hello", start: 18.5, end: 18.7 },
             { text: "kids", start: 18.7, end: 18.9 },
           ],
         },
@@ -85,14 +85,14 @@ export const StoryPage = () => {
             { text: "more", start: 7.9, end: 8.1 },
             { text: "around", start: 8.1, end: 8.3 },
             { text: "the", start: 8.3, end: 8.5 },
-            { text: "house,’", start: 8.5, end: 8.7 },
+            { text: "house.", start: 8.5, end: 8.7 },
           ],
         },
         {
           start: 9.0,
           end: 12.6,
           words: [
-            { text: "‘They", start: 8.7, end: 8.9 },
+            { text: "They", start: 8.7, end: 8.9 },
             { text: "do", start: 8.9, end: 9.1 },
             { text: "so", start: 9.1, end: 9.3 },
             { text: "much", start: 9.3, end: 9.5 },
@@ -107,7 +107,7 @@ export const StoryPage = () => {
             { text: "our", start: 11.1, end: 11.3 },
             { text: "free", start: 11.3, end: 11.5 },
             { text: "time", start: 11.5, end: 11.7 },
-            { text: "too.’", start: 11.7, end: 11.9 },
+            { text: "too.", start: 11.7, end: 11.9 },
           ],
         },
       ],
@@ -120,7 +120,7 @@ export const StoryPage = () => {
           start: 0,
           end: 2.3,
           words: [
-            { text: "‘There", start: 0.6, end: 0.9 },
+            { text: "There", start: 0.6, end: 0.9 },
             { text: "are", start: 0.9, end: 1.2 },
             { text: "six", start: 1.2, end: 1.5 },
             { text: "chores", start: 1.5, end: 1.8 },
@@ -132,13 +132,13 @@ export const StoryPage = () => {
           start: 3.0,
           end: 4.8,
           words: [
-            { text: "‘That’s", start: 3.2, end: 3.4 },
+            { text: "That’s", start: 3.2, end: 3.4 },
             { text: "three", start: 3.4, end: 3.6 },
             { text: "each", start: 3.6, end: 3.8 },
             { text: "if", start: 3.8, end: 4.0 },
             { text: "we", start: 4.0, end: 4.2 },
             { text: "share", start: 4.2, end: 4.4 },
-            { text: "them.’", start: 4.4, end: 4.6 }
+            { text: "them.", start: 4.4, end: 4.6 }
           ],
         },
       ],
@@ -151,9 +151,9 @@ export const StoryPage = () => {
           start: 9.0,
           end: 10.6,
           words: [
-            { text: "‘Wow!", start: 9.6, end: 10.0 },
+            { text: "Wow!", start: 9.6, end: 10.0 },
             { text: "Thank", start: 10.0, end: 10.2 },
-            { text: "you,’", start: 10.2, end: 10.6 },
+            { text: "you!", start: 10.2, end: 10.6 },
           ],
         },
         {
@@ -226,7 +226,7 @@ export const StoryPage = () => {
         { text: "mum", start: 3.0, end: 3.2 },
         { text: "cooks", start: 3.2, end: 3.4 },
         { text: "their", start: 3.4, end: 3.7 },
-        { text: "meal", start: 3.7, end: 4.0 },
+        { text: "meal.", start: 3.7, end: 4.0 },
       ],
     },
     {
@@ -348,7 +348,7 @@ export const StoryPage = () => {
       start: 10.0,
       end: 13.8,
       words: [
-        { text: "They", start: 11.1, end: 11.4 },
+        { text: "Then", start: 11.1, end: 11.4 },
         { text: "then", start: 11.4, end: 11.7 },
         { text: "plan", start: 11.7, end: 12.0 },
         { text: "a", start: 12.0, end: 12.3 },
@@ -442,7 +442,7 @@ export const StoryPage = () => {
         { text: "children", start: 14.1, end: 14.4 },
         { text: "finish", start: 14.4, end: 14.7 },
         { text: "their", start: 14.7, end: 15.0 },
-        { text: "chores", start: 15.0, end: 15.3 },
+        { text: "chores.", start: 15.0, end: 15.3 },
       ],
     },
     {

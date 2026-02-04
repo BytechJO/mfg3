@@ -78,7 +78,7 @@ export const QuizPage = () => {
           <img src={Q1Image} alt="Background" className="bg-img" />
 
           <div className="content">
-            <div className="questions">
+            <div className="questions text-sm">
               {/* Q1 */}
               <div className="Q1">
                 <span>Why did Derrick feel upset?</span>
@@ -119,7 +119,7 @@ export const QuizPage = () => {
 
               {/* Q3 */}
               <div className="Q3">
-                <span>How did Derrick show good sportsmanship to Jasmine?</span>
+                <span>How did Derrick show good sportsmanship <br /> <div className="line-break"> to Jasmine?</div></span>
                 <ul>
                   <li><p>He threw a tantrum.</p>
                     <input type="radio" name="q3" value="0" onChange={handleChange} />

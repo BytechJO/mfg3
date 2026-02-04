@@ -86,11 +86,11 @@ export const QuizPage = () => {
 
           <div className="content">
             <div className="questions ">
-              <div className="Q1 ">
+              <div className="Q1 lg:mt-[-3%]">
                 <span>What made Kylie almost reach her boiling point?</span>
                 <ul>
                   <li>
-                    <p> Her classmates pushed her against the bookshelf. </p>
+                    <p> Her classmates pushed her against the <br />bookshelf. </p>
                     <input
                       type="radio"
                       name="q1"
@@ -127,8 +127,8 @@ export const QuizPage = () => {
 
               <div className="Q2 ">
                 <span>
-                  What colour was the anger thermometer after <br /> someone told
-                  Kylie to hurry up?
+                  What colour was the anger thermometer after <br /> <div className="line-break"> someone told
+                  Kylie to hurry up? </div>
                 </span>
                 <ul>
                   <li>

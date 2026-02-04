@@ -87,7 +87,7 @@ export const QuizPage = () => {
           <div className="content">
             <div className="questions">
               {/* السؤال 1 */}
-              <div className="Q1">
+              <div className="Q1 mt-[-2%]">
                 <span>What were the group of boys talking about?</span>
                 <ul>
                   <li>
@@ -182,7 +182,8 @@ export const QuizPage = () => {
                     {renderAnswerGif("q3", "0")}
                   </li>
                   <li>
-                    <p> He talked with Peter about building toy aeroplanes. </p>
+                    <p> He talked with Peter about building toy  <br />
+                      aeroplanes.</p>
                     <input
                       type="radio"
                       name="q3"

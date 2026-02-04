@@ -86,11 +86,11 @@ export const QuizPage = () => {
           <img src={Q1Image} alt="Background" className="bg-img" />
 
           <div className="content">
-            <div className="questions">
+            <div className="questions text-sm">
               {/* Q1 */}
-              <div className="Q1">
+              <div className="Q1 lg:mt-[-1%]">
                 <span>
-                  How did David and Milo stay good friends even with their
+                  How did David and Milo stay good friends <br /> <div className="line-break">even with their</div>
                   differences?
                 </span>
                 <ul>
@@ -129,10 +129,10 @@ export const QuizPage = () => {
 
               {/* Q2 */}
               <div className="Q2">
-                <span>What was the problem between David and Milo?</span>
+                <span>What was the problem between <br /> <div className="line-break"> David and Milo? </div></span>
                 <ul>
                   <li>
-                    <p> They couldn’t decide which game to play<br /> first.</p>
+                    <p> They couldn’t decide which game to play first.</p>
                     <input
                       type="radio"
                       name="q2"

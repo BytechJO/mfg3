@@ -15,7 +15,7 @@ export const QuizPage = () => {
   const [showSkip, setShowSkip] = useState(false);
   const [showTry, setShowTry] = useState(false);
 
-  const correctAnswers = { q1: "1", q2: "1", q3: "0" }; // إجابات صحيحة لأسئلة Liam
+  const correctAnswers = { q1: "0", q2: "1", q3: "0" }; // إجابات صحيحة لأسئلة Liam
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -101,7 +101,7 @@ export const QuizPage = () => {
                   {renderAnswerGif("q1", "0")}
                 </li>
                 <li>
-                  <p> His brother Noah ruined his homework.</p>
+                  <p> His brother was in the kitchen.</p>
                   <input
                     type="radio"
                     name="q1"

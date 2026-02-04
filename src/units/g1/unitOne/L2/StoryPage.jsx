@@ -249,7 +249,7 @@ export const StoryPage = () => {
         },
 
         {
-          start: 20.0, end: 24.2,
+          start: 20.0, end: 27.0,
           words: [
             { text: "That", start: 20.0, end: 20.3 },
             { text: "sounds", start: 20.3, end: 20.7 },
@@ -260,23 +260,24 @@ export const StoryPage = () => {
             { text: "try", start: 22.7, end: 23.0 },
             { text: "something", start: 23.0, end: 23.3 },
             { text: "like", start: 23.3, end: 23.7 },
-            { text: "that.", start: 23.7, end: 24.4 }
+            { text: " that. ", start: 23.7, end: 24.4 }
           ]
         },
-        {
-          start: 24.2, end: 27,
-          words: [
-            { text: "I", start: 0.1, end: 0.4 },
-            { text: "can’t", start: 0.4, end: 0.7 },
-            { text: "believe", start: 0.7, end: 1.0 },
-            { text: "you", start: 1.0, end: 1.3 },
-            { text: "build", start: 1.3, end: 1.6 },
-            { text: "planes", start: 1.6, end: 1.9 },
-            { text: "Is", start: 2.5, end: 2.8 },
-            { text: "it", start: 2.8, end: 3.1 },
-            { text: "hard?", start: 3.1, end: 3.4 }
-          ]
-        },
+        // {
+        //   start: 24.2, end: 27,
+        //   words: [
+        //     { text: "That", start: 20.0, end: 20.3 },
+        //     { text: "sounds", start: 20.3, end: 20.7 },
+        //     { text: "amazing.", start: 20.7, end: 21.0 },
+        //     { text: "I’d", start: 21.8, end: 22.1 },
+        //     { text: "love", start: 22.1, end: 22.4 },
+        //     { text: "to", start: 22.4, end: 22.7 },
+        //     { text: "try", start: 22.7, end: 23.0 },
+        //     { text: "something", start: 23.0, end: 23.3 },
+        //     { text: "like", start: 23.3, end: 23.7 },
+        //     { text: "that.", start: 23.7, end: 24.4 }
+        //   ]
+        // },
 
       ]
     },
@@ -307,7 +308,7 @@ export const StoryPage = () => {
             { text: "my", start: 4.3, end: 4.6 },
             { text: "grandfather", start: 4.6, end: 4.9 },
             { text: "and", start: 4.9, end: 5.2 },
-            { text: "I", start: 5.2, end: 5.5 },
+            { text: "I.", start: 5.2, end: 5.5 },
 
           ]
         },
@@ -512,7 +513,7 @@ export const StoryPage = () => {
       videoIndex: 5,
       start: 7.0, end: 10.8,
       words: [
-        { text: "Jonah", start: 7.5, end: 7.8 },
+        { text: "Peter", start: 7.5, end: 7.8 },
         { text: "says", start: 7.8, end: 8.1 },
         { text: "and", start: 8.1, end: 8.4 },
         { text: "the", start: 8.4, end: 8.7 },
@@ -667,13 +668,12 @@ export const StoryPage = () => {
     setShowFeedback(false);
   };
 
- 
+
   const handleWordClick = (word) => {
     const cleanWord = word.toLowerCase().replace(/[.,?!]/g, "");
-    const allCorrectWords = [
-      "i", "can't", "believe", "you", "build",
-      "planes", "is", "it", "hard"
-    ];
+    // السطر الصحيح
+    const allCorrectWords = ["that", "sounds", "amazing"];
+
     if (!allCorrectWords.includes(cleanWord)) {
       setShowWrongFeedback(true);
       setTimeout(() => setShowWrongFeedback(false), 2000);
@@ -788,7 +788,7 @@ export const StoryPage = () => {
     if (!selectedText) return;
 
 
-    const allCorrectWords = ["i", "can’t", "believe", "you", "build", "planes", "is", "it", "hard"];
+    const allCorrectWords = ["That", "sounds", "amazing."];
 
     const wordsInSelection = selectedText
       .split(/\s+/)
@@ -817,7 +817,7 @@ export const StoryPage = () => {
         );
 
         if (allCorrectSelected && newWords.length === allCorrectWords.length) {
-          setShowFeedback(true); 
+          setShowFeedback(true);
           setShowBanner(false);
           setTimeout(() => {
             setShowFeedback(false);
@@ -976,7 +976,7 @@ export const StoryPage = () => {
                 Highlight the part where Jonah shows interest
               </p>
               <p style={{ fontSize: '1.8em', textAlign: 'left' }}>
-                in building planes. What does he say to Peter.
+                in building planes.
               </p>
             </div>
           )}

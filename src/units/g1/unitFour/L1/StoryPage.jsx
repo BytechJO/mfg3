@@ -140,7 +140,7 @@ export const StoryPage = () => {
             { text: "game", start: 15.4, end: 15.7 },
             { text: "first", start: 15.7, end: 16.0 },
             { text: "last", start: 16.0, end: 16.3 },
-            { text: "time,", start: 16.3, end: 16.6 }
+            { text: "time.", start: 16.3, end: 16.6 }
           ]
 
 
@@ -154,7 +154,7 @@ export const StoryPage = () => {
             { text: "take", start: 17.9, end: 18.2 },
             { text: "longer", start: 18.2, end: 18.5 },
             { text: "than", start: 18.5, end: 18.8 },
-            { text: "mine,", start: 18.8, end: 19.1 }
+            { text: "mine.", start: 18.8, end: 19.1 }
           ]
 
         },
@@ -162,21 +162,19 @@ export const StoryPage = () => {
         {
           start: 19.2, end: 30.5,
           words: [
-            { text: "We", start: 19.1, end: 19.4 },
-            { text: "need", start: 19.4, end: 19.7 },
-            { text: "a", start: 19.7, end: 20.0 },
-            { text: "fair", start: 20.0, end: 20.3 },
-            { text: "way", start: 20.3, end: 20.6 },
-            { text: "to", start: 20.6, end: 20.9 },
-            { text: "help", start: 20.9, end: 21.2 },
-            { text: "us", start: 21.2, end: 21.5 },
-            { text: "decide", start: 21.5, end: 21.8 },
-            { text: "which", start: 21.8, end: 22.1 },
-            { text: "game", start: 22.1, end: 22.4 },
-            { text: "we", start: 22.4, end: 22.7 },
-            { text: "should", start: 22.7, end: 23.0 },
-            { text: "play", start: 23.0, end: 23.3 },
-            { text: "first,", start: 23.3, end: 23.6 },
+            { text: "We", start: 19.3, end: 19.6 },
+            { text: "need", start: 19.6, end: 19.9 },
+            { text: "a fair", start: 19.9, end: 20.5 },
+            { text: "way", start: 20.5, end: 21.2 },
+            { text: "to", start: 21.2, end: 21.5 },
+            { text: "help us", start: 21.5, end: 22.0 },
+            { text: "decide", start: 22.0, end: 22.4 },
+            { text: "which", start: 22.4, end: 22.7 },
+            { text: "game", start: 22.7, end: 23.0 },
+            { text: "we", start: 23.0, end: 23.3 },
+            { text: "should", start: 23.3, end: 23.6 },
+            { text: "play", start: 23.6, end: 23.9 },
+            { text: "first.", start: 23.9, end: 24.4 },
             { text: "Lets", start: 25.7, end: 26.0 },
             { text: "play", start: 26.0, end: 26.3 },
             { text: "rock", start: 26.3, end: 26.6 },
@@ -238,7 +236,7 @@ export const StoryPage = () => {
             { text: "and", start: 9.1, end: 9.4 },
             { text: "then", start: 9.4, end: 9.7 },
             { text: "play", start: 9.7, end: 10.0 },
-            { text: "mine,", start: 10.0, end: 10.3 }
+            { text: "mine.", start: 10.0, end: 10.3 }
           ]
         },
 
@@ -546,7 +544,7 @@ export const StoryPage = () => {
         { text: "That’s", start: 2.0, end: 2.3 },
         { text: "a", start: 2.3, end: 2.6 },
         { text: "great", start: 2.6, end: 2.9 },
-        { text: "idea,", start: 2.9, end: 3.2 }
+        { text: "idea.", start: 2.9, end: 3.2 }
       ]
     },
     {
@@ -564,7 +562,7 @@ export const StoryPage = () => {
         { text: "your", start: 6.8, end: 7.1 },
         { text: "friend’s", start: 7.1, end: 7.4 },
         { text: "game", start: 7.4, end: 7.7 },
-        { text: "too", start: 7.7, end: 8.1 },
+        { text: "too.", start: 7.7, end: 8.1 },
       ]
     },
     {
@@ -1021,12 +1019,12 @@ export const StoryPage = () => {
 
           {currentVideo === 3 && showBanner && (
             <div className={`instruction-banner show ${isFullscreen ? 'fullscreen-banner' : ''}`}>
-              <p style={{ fontSize: '1.8em', textAlign: 'left' }}>
-                Highlight how do David and Milo manage to maintain their friendship despite their
+              <p style={{ fontSize: '1.5em', textAlign: 'left' }}>
+                Highlight how do David and Milo manage to maintain their friendship despite their different preferences for activities.
               </p>
-              <p style={{ fontSize: '1.8em', textAlign: 'left' }}>
-                different preferences for activities.
-              </p>
+              {/* <p style={{ fontSize: '1.2em', textAlign: 'left' }}>
+                
+              </p> */}
             </div>
           )}
 

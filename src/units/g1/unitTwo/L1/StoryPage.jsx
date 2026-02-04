@@ -141,7 +141,7 @@ export const StoryPage = () => {
             { text: "tight", start: 17.8, end: 18.1 },
             { text: "when", start: 18.1, end: 18.6 },
             { text: "I", start: 18.6, end: 18.9 },
-            { text: "hug", start: 18.9, end: 19.2 }
+            { text: "hug.", start: 18.9, end: 19.2 }
           ]
         },
 
@@ -206,23 +206,7 @@ export const StoryPage = () => {
 
 
 
-        {
-          start: 40.0, end: 45.0,
-          words: [
-            { text: "I’m", start: 12.8, end: 13.1 },
-            { text: "standing", start: 13.1, end: 13.8 },
-            { text: "too", start: 13.8, end: 14.2 },
-            { text: "close.", start: 14.2, end: 14.7 },
-            { text: "And", start: 15.5, end: 15.9 },
-            { text: "I", start: 16.3, end: 17.5 },
-            { text: "squeeze", start: 16.3, end: 17.5 },
-            { text: "too", start: 17.5, end: 17.8 },
-            { text: "tight", start: 17.8, end: 18.1 },
-            { text: "when", start: 18.1, end: 18.6 },
-            { text: "I", start: 18.6, end: 18.9 },
-            { text: "hug", start: 18.9, end: 19.2 }
-          ]
-        },
+        
 
       ]
     },
@@ -231,6 +215,25 @@ export const StoryPage = () => {
       url: video5,
       title: "Section 5",
       subtitles: [
+        {
+          start: 8.0, end: 12.0,
+          words: [        
+            { text: "Molly", start: 12.8, end: 13.1 },
+            { text: "is", start: 13.1, end: 13.8 },
+            { text: "glad", start: 13.8, end: 14.2 },
+            { text: "that", start: 14.2, end: 14.7 },
+            { text: "Emma", start: 15.5, end: 15.9 },
+            { text: "told", start: 16.3, end: 17.5 },
+            { text: "her", start: 16.3, end: 17.5 },
+            { text: "how", start: 17.5, end: 17.8 },
+            { text: "she", start: 17.8, end: 18.1 },
+            { text: "feels", start: 18.1, end: 18.6 },
+            { text: "about", start: 18.1, end: 18.6 },
+            { text: "her", start: 18.6, end: 18.9 },
+            { text: "personal", start: 18.6, end: 18.9 },
+            { text: "space.", start: 18.9, end: 19.2 }
+          ]
+        },
       ]
     },
   ];
@@ -339,7 +342,7 @@ export const StoryPage = () => {
         { text: "much", start: 4.5, end: 4.8 },
         { text: "as", start: 4.8, end: 5.0 },
         { text: "she", start: 5.0, end: 5.2 },
-        { text: "does", start: 5.2, end: 5.5 }
+        { text: "does,", start: 5.2, end: 5.5 }
       ]
     },
     {
@@ -382,7 +385,7 @@ export const StoryPage = () => {
         { text: "takes", start: 2.8, end: 3.1 },
         { text: "a", start: 3.1, end: 3.2 },
         { text: "deep", start: 3.2, end: 3.5 },
-        { text: "breath", start: 3.5, end: 3.8 }
+        { text: "breath,", start: 3.5, end: 3.8 }
       ]
     },
     {
@@ -488,7 +491,7 @@ export const StoryPage = () => {
     ],
 
     4: [
-      { top: '10%', left: '10%' },
+      { top: '10%', left: '35%' },
       { top: '5%', left: '35%' },
       { top: '5%', left: '55%', isFlipped: true },
       { top: '15%', left: '75%', isFlipped: true },
@@ -567,8 +570,7 @@ export const StoryPage = () => {
     const video = videoRef.current;
     if (!video) return;
 
-    if (currentVideo === 3 && isPlaying) {
-      console.log(`Current Time: ${currentTime}, Duration: ${duration}`);
+    if (currentVideo === 4 && isPlaying) {
       if (duration > 0 && currentTime >= duration - 0.1) {
         video.pause();
         setShowBanner(true);
@@ -666,7 +668,7 @@ export const StoryPage = () => {
     const selectedText = selection.toString().trim();
     if (!selectedText) return;
 
-    const allCorrectWords = ["i’m", "standing", "too", "close", "and", "i", "squeeze", "tight", "when", "hug"];
+    const allCorrectWords = ["molly", "is","glad", "that", "emma", "told", "her", "how", "she", "feels", "about","her","personal","space"];
 
     const wordsInSelection = selectedText
       .split(/\s+/)
@@ -780,7 +782,7 @@ export const StoryPage = () => {
 
 
   const handleEnded = useCallback(() => {
-    if (currentVideo === 3) {
+    if (currentVideo === 4) {
       setShowBanner(true);
       if (videoRef.current) {
         videoRef.current.pause();
@@ -806,9 +808,7 @@ export const StoryPage = () => {
 
   const handleWordClick = (word) => {
     const cleanWord = word.toLowerCase().replace(/[.,?!]/g, "");
-    const allCorrectWords = [
-      "i’m", "standing", "too", "close", "and", "i", "squeeze", "tight", "when", "hug"
-    ];
+    const allCorrectWords = ["molly", "is","glad", "that", "emma", "told", "her", "how", "she", "feels", "about","her","personal","space"];
     if (!allCorrectWords.includes(cleanWord)) {
       setShowWrongFeedback(true);
       setTimeout(() => setShowWrongFeedback(false), 2000);
@@ -871,7 +871,7 @@ export const StoryPage = () => {
             Your browser does not support the video tag.
           </video>
 
-          {showWrongFeedback && currentVideo === 3 && showBanner && (
+          {showWrongFeedback && currentVideo === 4 && showBanner && (
             <div className="wrong-feedback">
               Try Again! ❌
             </div>
@@ -883,7 +883,7 @@ export const StoryPage = () => {
             </div>
           )}
 
-          {currentVideo === 3 && showBanner && (
+          {currentVideo === 4 && showBanner && (
             <div className={`instruction-banner show ${isFullscreen ? 'fullscreen-banner' : ''}`}>
               <p style={{ fontSize: '1.8em', textAlign: 'left' }}>
                 Highlight how Molly shows that she
@@ -897,7 +897,7 @@ export const StoryPage = () => {
           {showBubble && showSubtitles && activeSubtitle && activeSubtitle.words && (
             <div className="subtitle-container" style={bubbleStyle}>
 
-              <div className={`bubble-cloud animate__animated animate__fadeIn ${bubbleStyle?.isFlipped ? 'flipped' : ''}
+              <div className={`bubble-cloud animate__animated animate__fadeIn ${currentVideo === 4 ? "question-bubble" : ""} ${bubbleStyle?.isFlipped ? 'flipped' : ''}
 `}>
                 <p
                   onMouseDown={handleMouseDown}

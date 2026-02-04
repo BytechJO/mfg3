@@ -93,7 +93,7 @@ export const QuizPage = () => {
 
           <div className="content">
             <div className="questions">
-            <div className="Q1">
+            <div className="Q1 lg:mt-[-3%]">
               <span>How did Emma feel about Molly’s hug?</span>
               <ul>
                 <li>
@@ -166,7 +166,7 @@ export const QuizPage = () => {
             </div>
 
             <div className="Q3">
-              <span>What did Molly learn about Emma’s feelings?</span>
+              <span>What did Molly learn about Emma’s <br /><div className="line-break"> feelings?</div></span>
               <ul>
                 <li>
                   <p> Emma squeezes too tight when she hugs.</p>

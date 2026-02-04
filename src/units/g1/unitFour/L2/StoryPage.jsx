@@ -80,20 +80,20 @@ export const StoryPage = () => {
             { text: "for", start: 17.6, end: 17.9 },
             { text: "telling", start: 17.9, end: 18.2 },
             { text: "me", start: 18.2, end: 18.5 },
-            { text: "Rose,", start: 18.5, end: 19.5 },
+            { text: "Rose.", start: 18.5, end: 19.5 },
             { text: "Children", start: 19.7, end: 20.0 },
             { text: "you", start: 20.0, end: 20.3 },
             { text: "can", start: 20.3, end: 20.6 },
             { text: "go", start: 20.6, end: 20.9 },
             { text: "outside", start: 20.9, end: 21.2 },
             { text: "to", start: 21.2, end: 21.5 },
-            { text: "play,", start: 21.5, end: 21.8 },
+            { text: "play.", start: 21.5, end: 21.8 },
             { text: "Josh", start: 22.4, end: 22.7 },
             { text: "and", start: 22.7, end: 23.0 },
             { text: "Anya", start: 23.0, end: 23.3 },
             { text: "stay", start: 23.3, end: 23.6 },
             { text: "with", start: 23.6, end: 23.9 },
-            { text: "me,", start: 23.9, end: 24.8 },
+            { text: "me.", start: 23.9, end: 24.8 },
           ],
         },
       ],
@@ -130,7 +130,7 @@ export const StoryPage = () => {
             { text: "the", start: 6.9, end: 7.2 },
             { text: "teacher", start: 7.2, end: 7.5 },
             { text: "for", start: 7.5, end: 7.8 },
-            { text: "help,", start: 7.8, end: 8.1 },
+            { text: "help.", start: 7.8, end: 8.1 },
           ],
         },
         {
@@ -184,7 +184,7 @@ export const StoryPage = () => {
             { text: "to", start: 13.1, end: 13.4 },
             { text: "us", start: 13.4, end: 13.7 },
             { text: "about", start: 13.7, end: 14.0 },
-            { text: "bullying.", start: 14.0, end: 14.3 },
+            { text: "bullying", start: 14.0, end: 14.3 },
             { text: "and", start: 14.3, end: 14.6 },
             { text: "we’re", start: 14.6, end: 14.9 },
             { text: "going", start: 14.9, end: 15.2 },
@@ -210,7 +210,7 @@ export const StoryPage = () => {
             { text: "at", start: 10.5, end: 10.8 },
             { text: "other", start: 10.8, end: 11.1 },
             { text: "people", start: 11.1, end: 11.4 },
-            { text: "now.", start: 11.4, end: 11.7 },
+            { text: "now", start: 11.4, end: 11.7 },
 
             { text: "and", start: 9.0, end: 9.3 },
             { text: "were", start: 9.3, end: 9.6 },
@@ -220,7 +220,7 @@ export const StoryPage = () => {
             { text: "it", start: 10.5, end: 10.8 },
             { text: "and", start: 10.8, end: 11.1 },
             { text: "be", start: 11.1, end: 11.4 },
-            { text: "kind", start: 11.4, end: 11.7 },
+            { text: "kind.", start: 11.4, end: 11.7 },
           ],
         },
       ],
@@ -952,10 +952,7 @@ export const StoryPage = () => {
           {currentVideo === 4 && showBanner && (
             <div className={`instruction-banner show ${isFullscreen ? 'fullscreen-banner' : ''}`}>
               <p style={{ fontSize: '1.8em', textAlign: 'left' }}>
-                Highlight the sentence that shows what Josh and Anya
-              </p>
-              <p style={{ fontSize: '1.8em', textAlign: 'left' }}>
-                learned about kindness and bullying.
+                Highlight the sentence that shows what Josh and Anya learned about kindness and bullying.
               </p>
             </div>
           )}

@@ -51,12 +51,12 @@ export const StoryPage = () => {
         {
           start: 11.0, end: 16.4,
           words: [
-            { text: "Wow –", start: 13.5, end: 13.8 },
-            { text: "thank", start: 14.0, end: 14.3 },
+            { text: "Wow!", start: 13.5, end: 13.8 },
+            { text: "Thank", start: 14.0, end: 14.3 },
             { text: "you.", start: 14.5, end: 14.8 },
             { text: "I", start: 15.0, end: 15.3 },
             { text: "love", start: 15.5, end: 15.8 },
-            { text: "them,", start: 16.0, end: 16.3 }
+            { text: "them!", start: 16.0, end: 16.3 }
           ]
         }
       ]
@@ -85,23 +85,6 @@ export const StoryPage = () => {
             { text: "try", start: 10.2, end: 10.7 },
             { text: "again", start: 10.2, end: 10.7 },
 
-            { text: "Jen", start: 0.0, end: 0.5 },
-            { text: "knows", start: 0.5, end: 1.0 },
-            { text: "it", start: 1.0, end: 1.4 },
-            { text: "is", start: 1.0, end: 1.4 },
-            { text: "sometimes", start: 1.4, end: 1.8 },
-            { text: "difficult", start: 1.8, end: 2.5 },
-            { text: "to", start: 2.5, end: 2.8 },
-            { text: "learn", start: 2.8, end: 3.1 },
-            { text: "new", start: 3.1, end: 3.4 },
-            { text: "things", start: 3.4, end: 3.7 },
-            { text: "and", start: 4.5, end: 4.7 },
-            { text: "it", start: 4.7, end: 4.9 },
-            { text: "takes", start: 4.9, end: 5.2 },
-            { text: "effort", start: 5.2, end: 5.5 },
-            { text: "to", start: 5.5, end: 5.6 },
-            { text: "achieve", start: 5.6, end: 6.0 },
-            { text: "goals.", start: 6.0, end: 6.4 }
 
           ]
         },
@@ -126,7 +109,7 @@ export const StoryPage = () => {
             { text: "going", start: 11.5, end: 11.8 },
             { text: "to", start: 11.8, end: 11.9 },
             { text: "keep", start: 11.9, end: 12.2 },
-            { text: "trying", start: 12.2, end: 12.6 }
+            { text: "trying.", start: 12.2, end: 12.6 }
           ]
         },
       ]
@@ -142,7 +125,7 @@ export const StoryPage = () => {
     2: [
     ],
     3: [
-      { bottom: '60%', left: '3%' },
+      { bottom: '60%', left: '10%' },
     ],
     4: [
       { top: '20%', left: '50%', transform: 'translateX(-50%)' },
@@ -311,18 +294,17 @@ export const StoryPage = () => {
         { text: "Jen", start: 7.5, end: 7.8 },
         { text: "sits", start: 7.8, end: 8.1 },
         { text: "for", start: 8.1, end: 8.3 },
-        { text: "a", start: 8.3, end: 8.4 },
+        { text: "a", start: 8.3, end: 8.6 },
         { text: "few", start: 8.4, end: 8.6 },
-        { text: "minutes", start: 8.6, end: 8.9 },
-        { text: "–", start: 8.9, end: 9.0 },
-        { text: "she", start: 9.0, end: 9.3 },
-        { text: "finishes", start: 9.3, end: 9.7 },
-        { text: "her", start: 9.7, end: 9.9 },
+        { text: "minutes.", start: 8.6, end: 9.0 },
+        { text: "She", start: 9.3, end: 9.6 },
+        { text: "finishes", start: 9.6, end: 9.6 },
+        { text: "her", start: 9.6, end: 9.9 },
         { text: "piece", start: 9.9, end: 10.2 },
-        { text: "of", start: 10.2, end: 10.3 },
-        { text: "cake", start: 10.3, end: 10.6 },
-        { text: "and", start: 10.6, end: 10.8 },
-        { text: "lemonade.", start: 10.8, end: 11.3 }
+        { text: "of", start: 10.2, end: 10.5 },
+        { text: "cake", start: 10.5, end: 10.8 },
+        { text: "and", start: 10.8, end: 11.1 },
+        { text: "lemonade.", start: 11.1, end: 11.4 },
       ]
     },
 
@@ -398,6 +380,10 @@ export const StoryPage = () => {
   const [narrationHighlight, setNarrationHighlight] = useState(true);
   const currentVideoData = videos[currentVideo];
 
+  if (!currentVideoData) {
+    console.log("There is no video show = " + currentVideoData)
+    return null; 
+  }
 
   useEffect(() => {
     if (showSettingsPopup && videoRef.current) {
@@ -439,8 +425,6 @@ export const StoryPage = () => {
     if (nextVideoIndex < videos.length) {
       const nextVideoUrl = videos[nextVideoIndex].url;
       const link = document.createElement('link');
-      link.rel = 'preload';
-      link.as = 'video';
       link.href = nextVideoUrl;
       document.head.appendChild(link);
       return () => {
@@ -454,7 +438,6 @@ export const StoryPage = () => {
     if (!video) return;
 
     if (currentVideo === 3 && isPlaying) {
-      console.log(`Current Time: ${currentTime}, Duration: ${duration}`);
       if (duration > 0 && currentTime >= duration - 0.1) {
         video.pause();
         setShowBanner(true);
@@ -466,6 +449,7 @@ export const StoryPage = () => {
     setSelectedWords([]);
     setShowFeedback(false);
   };
+
   useEffect(() => {
     setSelectedWords([]);
     setShowFeedback(false);
@@ -537,14 +521,22 @@ export const StoryPage = () => {
     setCurrentVideo(prev => (prev > 0 ? prev - 1 : videos.length - 1));
     setShowBanner(false);
   };
+
   const handleNext = () => {
-    if (currentVideo === videos.length - 1) {
-      navigate(`/unit/${unitId}/lesson/${lessonId}/quiz`);
-    } else {
-      setCurrentVideo(prev => prev + 1);
-      setShowBanner(false);
+    try {
+      if (currentVideo === videos.length - 1) {
+        navigate(`/unit/${unitId}/lesson/${lessonId}/quiz`);
+      } else {
+        setCurrentVideo(prev => prev + 1);
+        setShowBanner(false);
+      }
+    } catch (error) {
+      console.log(error);
     }
+
   };
+
+
   const handleTextSelection = () => {
     const selection = window.getSelection();
     if (!selection || selection.rangeCount === 0) return;
@@ -552,7 +544,7 @@ export const StoryPage = () => {
     const selectedText = selection.toString().trim();
     if (!selectedText) return;
 
-    const allCorrectWords = ["it", "is", "sometimes", "difficult", "learn", "new", "things", "and", "takes", "effort", "achieve", "goals", "i", "am", "ready", "to", "try", "again"];
+    const allCorrectWords = ["i", "am", "ready", "to", "try", "again"];
 
     const wordsInSelection = selectedText
       .split(/\s+/)
@@ -579,18 +571,20 @@ export const StoryPage = () => {
         const allCorrectSelected = allCorrectWords.every(correctWord =>
           newWords.some(w => w.toLowerCase() === correctWord)
         );
-
-        if (allCorrectSelected && newWords.length === allCorrectWords.length) {
-          setShowFeedback(true);
-          setShowBanner(false);
-          setTimeout(() => {
-            setShowFeedback(false);
+        try {
+          if (allCorrectSelected && newWords.length === allCorrectWords.length) {
+            setShowFeedback(true);
             setShowBanner(false);
-            handleNext();
-          }, 2000);
+            setTimeout(() => {
+              setShowFeedback(false);
+              setShowBanner(false);
+              handleNext();
+            }, 2000);
+          }
+          return newWords;
+        } catch (error) {
+          console.log("catching: " + error)
         }
-
-        return newWords;
       });
     }
 
@@ -691,7 +685,7 @@ export const StoryPage = () => {
   const handleWordClick = (word) => {
     const cleanWord = word.toLowerCase().replace(/[.,?!]/g, "");
     const allCorrectWords = [
-      "it", "is", "sometimes", "difficult", "learn", "new", "things", "and", "takes", "effort", "achieve", "goals", "i", "am", "ready", "to", "try", "again"
+      "i", "am", "ready", "to", "try", "again"
     ];
     if (!allCorrectWords.includes(cleanWord)) {
       setShowWrongFeedback(true);
@@ -712,17 +706,12 @@ export const StoryPage = () => {
         setTimeout(() => {
           setShowFeedback(false);
           setShowBanner(false);
-          handleNext();
         }, 2000);
       }
 
       return newWords;
     });
   };
-
-  const isLastSubtitle =
-    activeSubtitleIndex !== -1 &&
-    activeSubtitleIndex === currentVideoData.subtitles.length - 1;
 
   return (
     <div className="story-page-container">
@@ -754,7 +743,7 @@ export const StoryPage = () => {
             muted={isMuted}
             onEnded={handleEnded}
             preload="auto"
-            src={currentVideoData.url}
+            src={currentVideoData?.url}
           >
             Your browser does not support the video tag.
           </video>
@@ -786,10 +775,7 @@ export const StoryPage = () => {
             <div className="subtitle-container" style={bubbleStyle}>
 
               <div
-                className={`bubble-cloud animate__animated animate__fadeIn
-    ${currentVideo === 3 && isLastSubtitle ? "question-bubble" : ""}
-    ${bubbleStyle.isFlipped ? "flipped" : ""}
-  `}
+                className={`bubble-cloud animate__animated animate__fadeIn ${bubbleStyle.isFlipped ? "flipped" : ""}`}
               >
                 <p
                   onMouseDown={handleMouseDown}

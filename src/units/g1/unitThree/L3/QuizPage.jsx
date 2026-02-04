@@ -85,9 +85,9 @@ export const QuizPage = () => {
           <img src={Q1Image} alt="Background" className="bg-img" />
 
           <div className="content quizfix">
-            <div className="questions">
+            <div className="questions text-sm">
               <div className="Q1">
-                <span>What did Brian ask Mr Percy?</span>
+                <span>What did Brian ask Mr. Percy?</span>
                 <ul>
                   <li>
                     <p> ‘Would you like a piece of cake?’</p>
@@ -123,7 +123,7 @@ export const QuizPage = () => {
               </div>
 
               <div className="Q2">
-                <span>Why did Brian ask Mr Percy about the noise?</span>
+                <span>Why did Brian ask Mr. Percy about the noise?</span>
                 <ul>
                   <li>
                     <p> He didn’t want to be too loud.</p>
@@ -136,7 +136,7 @@ export const QuizPage = () => {
                     {renderAnswerGif("q2", "0")}
                   </li>
                   <li>
-                    <p> He wanted to know if Mr Percy wanted cake.</p>
+                    <p> He wanted to know if Mr. Percy <br /> wanted cake.</p>
                     <input
                       type="radio"
                       name="q2"
@@ -146,7 +146,7 @@ export const QuizPage = () => {
                     {renderAnswerGif("q2", "1")}
                   </li>
                   <li>
-                    <p> He wanted to show Mr Percy his yellow belt.</p>
+                    <p> He wanted to show Mr. Percy his <br /> yellow belt.</p>
                     <input
                       type="radio"
                       name="q2"

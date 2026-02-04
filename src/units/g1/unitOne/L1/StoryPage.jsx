@@ -278,16 +278,16 @@ export const StoryPage = () => {
         {
           start: 6.4, end: 10.3,
           words: [
-            { text: "I'm", start: 6.5, end: 6.85 },
-            { text: "happy", start: 6.85, end: 7.2 },
-            { text: "you", start: 7.2, end: 7.55 },
-            { text: "can", start: 7.55, end: 7.9 },
-            { text: "make", start: 7.9, end: 8.25 },
-            { text: "your", start: 8.25, end: 8.6 },
-            { text: "modelling", start: 8.6, end: 8.95 },
-            { text: "dough", start: 8.95, end: 9.3 },
-            { text: "now,", start: 9.3, end: 9.65 },
-            { text: "Rob.", start: 9.65, end: 10.0 }
+            { text: "I'm", start: 6.5, end: 6.8 },
+            { text: "happy", start: 6.8, end: 7.1 },
+            { text: "you", start: 7.1, end: 7.4 },
+            { text: "can", start: 7.3, end: 7.6 },
+            { text: "make", start: 7.5, end: 7.8 },
+            { text: "your", start: 7.8, end: 8.1 },
+            { text: "modelling", start: 8.1, end: 8.5 },
+            { text: "dough", start: 8.5, end: 8.8 },
+            { text: "now,", start: 8.8, end: 9.1 },
+            { text: "Rob.", start: 9.1, end: 9.5 }
           ]
         },
       ]
@@ -302,7 +302,7 @@ export const StoryPage = () => {
       { top: '10%', left: '15%' },
       { top: '15%', left: '15%' },
       { top: '30%', right: '10%', left: 'auto', isFlipped: true },
-      { top: '0%', left: '50%', isFlipped: true },
+      { top: '10%', left: '50%', isFlipped: true },
     ],
     3: [
       { bottom: '80%', left: '68%', transform: 'translateX(-50%)', isFlipped: true },
@@ -616,9 +616,6 @@ export const StoryPage = () => {
     },
   ];
 
-
-
-
   const [showWrongFeedback, setShowWrongFeedback] = useState(false);
   const [isSelecting, setIsSelecting] = useState(false);
   const [showSettingsPopup, setShowSettingsPopup] = useState(false);
@@ -627,7 +624,6 @@ export const StoryPage = () => {
   const settingsPopupRef = useRef(null);
   const [narrationHighlight, setNarrationHighlight] = useState(true);
   const currentVideoData = videos[currentVideo];
-
 
   useEffect(() => {
     if (showSettingsPopup && videoRef.current) {

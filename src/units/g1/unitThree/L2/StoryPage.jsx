@@ -62,20 +62,20 @@ export const StoryPage = () => {
           start: 0,
           end: 1.2,
           words: [
-            { text: "‘Hello,", start: 0.2, end: 0.4 },
+            { text: "Hello,", start: 0.2, end: 0.4 },
             { text: "what’s", start: 0.4, end: 0.6 },
             { text: "your", start: 0.6, end: 0.8 },
-            { text: "name?’", start: 0.8, end: 1.0 },
+            { text: "name?", start: 0.8, end: 1.0 },
           ],
         },
         {
           start: 9.0,
-          end: 10.9,
+          end: 11.9,
           words: [
-            { text: "‘Your", start: 9.0, end: 9.3 },
-            { text: "shop", start: 9.3, end: 9.6 },
-            { text: "is", start: 9.6, end: 9.9 },
-            { text: "boring!’", start: 9.9, end: 10.6 },
+            { text: "Your", start: 9.5, end: 10.0 },
+            { text: "shop", start: 10.0, end: 10.5 },
+            { text: "is", start: 10.5, end: 11.0 },
+            { text: "boring!", start: 11.0, end: 11.5 },
           ],
         },
       ],
@@ -121,18 +121,18 @@ export const StoryPage = () => {
         },
         {
           start: 21.6,
-          end: 23.2,
+          end: 25.0,
           words: [
-            { text: "It", start: 22.5, end: 22.7 },
-            { text: "was", start: 22.7, end: 22.9 },
-            { text: "wrong,", start: 22.9, end: 23.1 },
+            { text: "It", start: 22.5, end: 22.5 },
+            { text: "was", start: 22.5, end: 23.0 },
+            { text: "wrong.", start: 23.0, end: 23.5 },
           ],
         },
         {
           start: 26.0,
           end: 28.5,
           words: [
-            { text: "‘That’s", start: 26.0, end: 26.3 },
+            { text: "That’s", start: 26.0, end: 26.3 },
             { text: "okay,", start: 26.3, end: 26.6 },
             { text: "I", start: 26.6, end: 26.9 },
             { text: "understand", start: 26.9, end: 27.2 },
@@ -156,7 +156,7 @@ export const StoryPage = () => {
             { text: "that", start: 30.9, end: 31.2 },
             { text: "all", start: 31.2, end: 31.5 },
             { text: "the", start: 31.5, end: 31.8 },
-            { text: "time,’", start: 31.8, end: 32.1 },
+            { text: "time.", start: 31.8, end: 32.1 },
           ],
         },
       ],
@@ -193,7 +193,7 @@ export const StoryPage = () => {
             { text: "and", start: 4.0, end: 4.3 },
             { text: "that", start: 4.3, end: 4.6 },
             { text: "you", start: 4.6, end: 4.8 },
-            { text: "apologised.’", start: 4.8, end: 5.4 },
+            { text: "apologised.", start: 4.8, end: 5.4 },
           ],
         },
       ],
@@ -207,7 +207,7 @@ export const StoryPage = () => {
           start: 3.3,
           end: 5.1,
           words: [
-            { text: "‘I", start: 4.1, end: 4.3 },
+            { text: "I", start: 4.1, end: 4.3 },
             { text: "like", start: 4.3, end: 4.5 },
             { text: "your", start: 4.5, end: 4.7 },
             { text: "window", start: 4.7, end: 4.9 },
@@ -227,23 +227,23 @@ export const StoryPage = () => {
             { text: "by", start: 7.7, end: 7.9 },
             { text: "the", start: 7.9, end: 8.1 },
             { text: "changing", start: 8.1, end: 8.3 },
-            { text: "rooms,’", start: 8.3, end: 8.5 },
+            { text: "rooms.", start: 8.3, end: 8.5 },
           ],
         },
         {
           start: 10.0,
           end: 11.8,
           words: [
-            { text: "‘Well,", start: 10.6, end: 10.8 },
+            { text: "Well,", start: 10.6, end: 10.8 },
             { text: "thank", start: 10.8, end: 11.0 },
-            { text: "you,’", start: 11.0, end: 11.2 },
+            { text: "you.", start: 11.0, end: 11.2 },
           ],
         },
         {
           start: 15.5,
           end: 20.0,
           words: [
-            { text: "im", start: 11.0, end: 11.2 },
+            { text: "I’m", start: 11.0, end: 11.2 },
             { text: "sorry", start: 11.2, end: 11.4 },
             { text: "I", start: 12.2, end: 12.6 },
             { text: "was", start: 12.6, end: 12.8 },
@@ -297,21 +297,21 @@ export const StoryPage = () => {
         { text: "and", start: 3.6, end: 4.0 },
         { text: "does", start: 4.0, end: 4.3 },
         { text: "not", start: 4.3, end: 4.6 },
-        { text: "smile", start: 4.6, end: 4.9 },
+        { text: "smile.", start: 4.6, end: 4.9 },
       ],
     },
     {
       videoIndex: 1,
       start: 5.0,
-      end: 7.6,
+      end: 8.5,
       words: [
-        { text: "The", start: 6.0, end: 6.2 },
-        { text: "shopkeeper", start: 6.2, end: 6.4 },
-        { text: "asks", start: 6.4, end: 6.6 },
-        { text: "what", start: 6.6, end: 6.8 },
-        { text: "the", start: 6.8, end: 7.0 },
-        { text: "matter", start: 7.0, end: 7.2 },
-        { text: "is.", start: 7.2, end: 7.4 },
+        { text: "The", start: 6.0, end: 6.3 },
+        { text: "shopkeeper", start: 6.3, end: 6.6 },
+        { text: "asks", start: 6.6, end: 6.9 },
+        { text: "what", start: 7.2, end: 7.5 },
+        { text: "the", start: 7.5, end: 7.8 },
+        { text: "matter", start: 7.8, end: 8.1 },
+        { text: "is.", start: 8.1, end: 8.4 },
       ],
     },
     {
@@ -319,7 +319,7 @@ export const StoryPage = () => {
       start: 10.9,
       end: 15.8,
       words: [
-        { text: "she", start: 12.7, end: 13.0 },
+        { text: "She", start: 12.7, end: 13.0 },
         { text: "answers", start: 13.0, end: 13.3 },
         { text: "rudely", start: 13.3, end: 13.6 },
         { text: "as", start: 13.6, end: 13.9 },
@@ -353,14 +353,14 @@ export const StoryPage = () => {
     {
       videoIndex: 2,
       start: 0,
-      end: 1.8,
+      end: 2.5,
       words: [
-        { text: "Ellen", start: 0.2, end: 0.4 },
-        { text: "notices", start: 0.4, end: 0.6 },
-        { text: "the", start: 0.6, end: 0.8 },
-        { text: "shopkeeper’s", start: 0.8, end: 1.0 },
-        { text: "surprised", start: 1.0, end: 1.4 },
-        { text: "face,", start: 1.4, end: 1.8 },
+        { text: "Ellen", start: 0.2, end: 0.5 },
+        { text: "notices", start: 0.5, end: 0.8 },
+        { text: "the", start: 0.8, end: 1.0 },
+        { text: "shopkeeper’s", start: 1.0, end: 1.3 },
+        { text: "surprised", start: 1.3, end: 1.7 },
+        { text: "face,", start: 1.7, end: 2.1 },
       ],
     },
     {
@@ -416,7 +416,7 @@ export const StoryPage = () => {
         { text: "Dad", start: 0.2, end: 0.4 },
         { text: "buys", start: 0.4, end: 0.6 },
         { text: "a", start: 0.6, end: 0.8 },
-        { text: "coat,", start: 0.8, end: 1.0 },
+        { text: "coat", start: 0.8, end: 1.0 },
         { text: "and", start: 1.0, end: 1.2 },
         { text: "they", start: 1.2, end: 1.4 },
         { text: "start", start: 1.4, end: 1.6 },
@@ -433,16 +433,16 @@ export const StoryPage = () => {
     {
       videoIndex: 4,
       start: 12.0,
-      end: 14.9,
+      end: 16.0,
       words: [
-        { text: "Ellen", start: 12.0, end: 12.3 },
-        { text: "feels", start: 12.3, end: 12.6 },
-        { text: "happy", start: 12.6, end: 12.9 },
-        { text: "she", start: 12.9, end: 13.2 },
-        { text: "apologised", start: 13.2, end: 13.5 },
-        { text: "to", start: 13.5, end: 13.8 },
-        { text: "the", start: 13.8, end: 14.1 },
-        { text: "shopkeeper", start: 14.1, end: 14.4 },
+        { text: "Ellen", start: 12.0, end: 12.4 },
+        { text: "feels", start: 12.4, end: 12.8 },
+        { text: "happy", start: 12.8, end: 13.1 },
+        { text: "she", start: 13.1, end: 13.5 },
+        { text: "apologised", start: 13.5, end: 14.0 },
+        { text: "to", start: 14.0, end: 15.0 },
+        { text: "the", start: 15.0, end: 15.5 },
+        { text: "shopkeeper.", start: 15.5, end: 15.9 },
       ],
     },
   ];
@@ -511,7 +511,6 @@ export const StoryPage = () => {
     if (!video) return;
 
     if (currentVideo === 4 && isPlaying) {
-      console.log(`Current Time: ${currentTime}, Duration: ${duration}`);
       if (duration > 0 && currentTime >= duration - 0.1) {
         video.pause();
         setShowBanner(true);
@@ -609,12 +608,11 @@ export const StoryPage = () => {
     const selectedText = selection.toString().trim();
     if (!selectedText) return;
 
-    const allCorrectWords = ["im","sorry", "i", "was", "rude", "before"];
+    const allCorrectWords = ["im", "sorry", "i", "was", "rude", "before"];
 
     const wordsInSelection = selectedText
       .split(/\s+/)
-      .map(word => word.replace(/[.,?!]/g, '').toLowerCase());
-
+      .map(word => word.replace(/[.,?!'’]/g, '').toLowerCase());
     const hasWrongWords = wordsInSelection.some(word =>
       word && !allCorrectWords.includes(word)
     );
@@ -644,7 +642,7 @@ export const StoryPage = () => {
           setTimeout(() => {
             setShowFeedback(false);
             setShowBanner(false);
-            handleNext(); 
+            handleNext();
           }, 2000);
         }
         // *** نهاية التعديل ***
@@ -747,10 +745,8 @@ export const StoryPage = () => {
   }, [currentVideo, videos.length, navigate, unitId, lessonId, autoPlayNext]);
 
   const handleWordClick = (word) => {
-    const cleanWord = word.toLowerCase().replace(/[.,?!]/g, "");
-    const allCorrectWords = [
-      "im","sorry", "i", "was", "rude", "before"
-    ];
+    const cleanWord = word.trim().toLowerCase().replace(/[^a-zA-Z0-9]/g, "");
+    const allCorrectWords = ["im", "sorry", "i", "was", "rude", "before"];
     if (!allCorrectWords.includes(cleanWord)) {
       setShowWrongFeedback(true);
       setTimeout(() => setShowWrongFeedback(false), 2000);
@@ -777,6 +773,9 @@ export const StoryPage = () => {
       return newWords;
     });
   };
+
+  const isLastSubtitle =
+    activeSubtitleIndex === currentVideoData.subtitles.length - 1;
 
   return (
     <div className="story-page-container">
@@ -813,7 +812,7 @@ export const StoryPage = () => {
             Your browser does not support the video tag.
           </video>
 
-          {showWrongFeedback && currentVideo === 4 && showBanner &&(
+          {showWrongFeedback && currentVideo === 4 && showBanner && (
             <div className="wrong-feedback">
               Try Again! ❌
             </div>
@@ -839,7 +838,10 @@ export const StoryPage = () => {
           {showBubble && showSubtitles && activeSubtitle && activeSubtitle.words && (
             <div className="subtitle-container" style={bubbleStyle}>
 
-              <div className={`bubble-cloud animate__animated animate__fadeIn ${bubbleStyle?.isFlipped ? 'flipped' : ''}
+              <div className={`bubble-cloud animate__animated animate__fadeIn 
+              ${isLastSubtitle ? "question-bubble" : ""}
+              ${bubbleStyle?.isFlipped ? 'flipped' : ''
+                }
 `}>
                 <p
                   onMouseDown={handleMouseDown}
@@ -848,7 +850,7 @@ export const StoryPage = () => {
                 >
                   {activeSubtitle.words.map((word, index) => {
                     const isHighlighted = currentTime >= word.start && currentTime < word.end;
-                    const cleanWord = word.text.replace(/[.,?!]/g, '');
+                    const cleanWord = word.text.replace(/[^a-zA-Z0-9]/g, '')
                     const isSelected = selectedWords.some(w =>
                       w.toLowerCase() === cleanWord.toLowerCase()
                     );
@@ -867,7 +869,7 @@ export const StoryPage = () => {
                   })}
                 </p>
 
-               
+
               </div>
             </div>
           )}

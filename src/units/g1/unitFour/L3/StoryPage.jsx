@@ -62,9 +62,9 @@ export const StoryPage = () => {
         {
           start: 14.0, end: 18.0,
           words: [
-            { text: "‘Jasmine!", start: 14.0, end: 16.3 },
-            { text: "Congratulations", start: 16.3, end: 16.6 },
-            { text: "Jasmine!’", start: 16.6, end: 17.5 },
+            { text: "Jasmine!", start: 14.0, end: 16.3 },
+            { text: "Congratulations,", start: 16.3, end: 16.6 },
+            { text: "Jasmine!", start: 16.6, end: 17.5 },
           ]
         },
       ]
@@ -81,14 +81,14 @@ export const StoryPage = () => {
             { text: "on", start: 21.8, end: 22.1 },
             { text: "winning", start: 22.1, end: 22.4 },
             { text: "class", start: 22.4, end: 22.7 },
-            { text: "president,’", start: 22.7, end: 23.0 },
+            { text: "president.’", start: 22.7, end: 23.0 },
           ]
         },
         {
           start: 24.0, end: 25.0,
           words: [
-            { text: "‘Thank", start: 24.2, end: 24.5 },
-            { text: "you,’", start: 24.5, end: 24.8 },
+            { text: "Thank", start: 24.2, end: 24.5 },
+            { text: "you.", start: 24.5, end: 24.8 },
           ]
         },
         {
@@ -120,7 +120,7 @@ export const StoryPage = () => {
             { text: "find", start: 30.4, end: 30.7 },
             { text: "making", start: 30.7, end: 31.0 },
             { text: "presentations", start: 31.0, end: 31.3 },
-            { text: "hard.’", start: 31.3, end: 31.6 },
+            { text: "hard.", start: 31.3, end: 31.6 },
           ]
         },
         {
@@ -131,7 +131,7 @@ export const StoryPage = () => {
             { text: "on", start: 21.8, end: 22.1 },
             { text: "winning", start: 22.1, end: 22.4 },
             { text: "class", start: 22.4, end: 22.7 },
-            { text: "president", start: 22.7, end: 23.0 },
+            { text: "president.", start: 22.7, end: 23.0 },
           ]
         },
       ]
@@ -143,7 +143,7 @@ export const StoryPage = () => {
         {
           start: 2.4, end: 10.8,
           words: [
-            { text: "‘If", start: 2.4, end: 2.7 },
+            { text: "If", start: 2.4, end: 2.7 },
             { text: "you", start: 2.7, end: 3.0 },
             { text: "want,", start: 3.0, end: 3.3 },
             { text: "I", start: 3.3, end: 3.6 },
@@ -152,7 +152,7 @@ export const StoryPage = () => {
             { text: "you", start: 4.2, end: 4.5 },
             { text: "make", start: 4.5, end: 4.8 },
             { text: "your", start: 4.8, end: 5.1 },
-            { text: "presentations,", start: 5.1, end: 5.4 },
+            { text: "presentations.", start: 5.1, end: 5.4 },
             { text: "it’s", start: 7.0, end: 7.3 },
             { text: "something", start: 7.3, end: 7.6 },
             { text: "I", start: 7.6, end: 7.9 },
@@ -164,7 +164,7 @@ export const StoryPage = () => {
             { text: "like", start: 9.4, end: 9.7 },
             { text: "to", start: 9.7, end: 10.0 },
             { text: "help", start: 10.0, end: 10.3 },
-            { text: "you.’", start: 10.3, end: 10.6 },
+            { text: "you.", start: 10.3, end: 10.6 },
 
 
 
@@ -176,12 +176,12 @@ export const StoryPage = () => {
             { text: "That’s", start: 10.8, end: 11.1 },
             { text: "so", start: 11.1, end: 11.4 },
             { text: "kind", start: 11.4, end: 11.7 },
-            { text: "Derrick,", start: 11.7, end: 12.0 },
+            { text: "Derrick.", start: 11.7, end: 12.0 },
             { text: "I", start: 12.0, end: 12.3 },
             { text: "would", start: 12.3, end: 12.6 },
             { text: "really", start: 12.6, end: 12.9 },
             { text: "like", start: 12.9, end: 13.2 },
-            { text: "that,’", start: 13.2, end: 13.5 },
+            { text: "that.", start: 13.2, end: 13.5 },
 
 
           ]
@@ -200,12 +200,12 @@ export const StoryPage = () => {
     ],
 
     2: [
-      { top: '10%', right: '10%', isFlipped: true },
+      { top: '20%', right: '10%', isFlipped: true },
 
     ],
 
     3: [
-      { bottom: '70%', left: '60%', isFlipped: true },
+      { bottom: '63%', left: '70%', isFlipped: true },
       { top: '10%', left: '30%', isFlipped: true },
       { top: '10%', left: '35%', isFlipped: true },
       { top: '10%', left: '32%', isFlipped: true },
@@ -414,7 +414,7 @@ export const StoryPage = () => {
         { text: "and", start: 7.4, end: 7.7 },
         { text: "throw", start: 7.7, end: 8.0 },
         { text: "a", start: 8.0, end: 8.3 },
-        { text: "tantrum", start: 8.3, end: 8.6 },
+        { text: "tantrum.", start: 8.3, end: 8.6 },
         { text: "Derrick", start: 8.6, end: 8.9 },
         { text: "takes", start: 8.9, end: 9.2 },
         { text: "a", start: 9.2, end: 9.5 },
@@ -893,11 +893,8 @@ export const StoryPage = () => {
 
           {currentVideo === 3 && showBanner && (
             <div className={`instruction-banner show ${isFullscreen ? 'fullscreen-banner' : ''}`}>
-              <p style={{ fontSize: '1.8em', textAlign: 'left' }}>
-                Highlight the sentence that shows Derrick demonstrating
-              </p>
-              <p style={{ fontSize: '1.8em', textAlign: 'left' }}>
-                good sportsmanship despite feeling upset.
+              <p style={{ fontSize: '1.5em', textAlign: 'left' }}>
+                Highlight the sentence that shows Derrick demonstrating good sportsmanship despite feeling upset.
               </p>
             </div>
           )}
