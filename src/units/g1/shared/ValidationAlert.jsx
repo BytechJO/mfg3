@@ -18,7 +18,7 @@ const ValidationAlert = {
       imageHeight: 200,
       imageAlt: "Question GIF",
       background: "#dfeaf6",
-      confirmButtonText: '<i class="fa-solid fa-right-long"></i>',
+      confirmButtonText: 'Continue',
       allowOutsideClick: false,
       allowEscapeKey: false,
       buttonsStyling: false,
@@ -34,7 +34,7 @@ const ValidationAlert = {
     });
   },
 
-  error: (title = "Try Again!", text = "", scoreText = "", onConfirm = null) => {
+  error: (title = "You can do it!", text = "", scoreText = "", onConfirm = null) => {
     return Swal.fire({
       title: title,
       html: `
@@ -45,7 +45,7 @@ const ValidationAlert = {
       imageWidth: 200,
       imageHeight: 200,
       imageAlt: "Question GIF",
-      confirmButtonText: 'Try',
+      confirmButtonText: 'Try Again',
       allowOutsideClick: false,
       allowEscapeKey: false,
       buttonsStyling: false,

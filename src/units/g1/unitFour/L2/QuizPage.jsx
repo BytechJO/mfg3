@@ -47,7 +47,7 @@ export const QuizPage = () => {
       ValidationAlert.success("Good Job!", "", scoreString)
         .then(() => navigate(`/unit/${unitId}/lesson/${lessonId}/feedBack`));
     } else {
-      ValidationAlert.error("Try again", "", scoreString);
+      ValidationAlert.error("You can do it!", "", scoreString);
     }
   };
 

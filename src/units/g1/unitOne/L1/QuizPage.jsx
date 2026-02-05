@@ -46,7 +46,7 @@ export const QuizPage = () => {
       await ValidationAlert.success("Good Job!", "", scoreString);
       navigate(`/unit/${unitId}/lesson/${lessonId}/feedBack`);
     } else {
-      ValidationAlert.error("Try again", "", scoreString);
+      ValidationAlert.error("You can do it!", "", scoreString);
     }
   } catch (error) {
     console.log(error);

@@ -53,7 +53,7 @@ export const QuizPage = () => {
       ).then(() => navigate(`/unit/${unitId}/lesson/${lessonId}/feedBack`));
     } else {
       ValidationAlert.error(
-        "Try again",
+        "You can do it!",
         "",
         scoreString
       );

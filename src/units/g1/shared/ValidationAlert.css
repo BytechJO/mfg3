@@ -34,7 +34,7 @@
 /* زر التأكيد */
 .my-button {
   position: absolute;
-  background: #4a90e2 !important;
+  background: green !important;
   color: white !important;
   font-weight: bold !important;
   font-size: clamp(14px, 1.8vw, 18px) !important;
@@ -49,7 +49,7 @@
 }
 
 .my-button:hover {
-  background: #357abd !important;
+  background: rgb(2, 109, 2) !important;
   transform: scale(1.1);
   box-shadow: 0 clamp(5px, 1vw, 10px) clamp(8px, 1.5vw, 15px) rgba(0, 0, 0, 0.4);
 }
