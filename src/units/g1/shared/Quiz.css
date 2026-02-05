@@ -811,5 +811,5 @@ body {
 
 .line-break {
   display: inline-block;
-  margin-left: 3%;
+  margin-left: clamp(6px, 3vw, 24px);
 }

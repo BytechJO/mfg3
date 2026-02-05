@@ -64,28 +64,24 @@ export const StoryPage = () => {
         },
 
         {
-          start: 1.0, end: 7.0,
+          start: 1.0, end: 6.0,
           words: [
             { text: "Play", start: 1.1, end: 1.4 },
             { text: "football", start: 1.4, end: 1.8 },
-            { text: "in", start: 1.8, end: 2.0 },
-            { text: "the", start: 2.0, end: 2.2 },
-            { text: "garden,", start: 2.2, end: 2.6 },
-            { text: "I’m", start: 2.6, end: 2.9 },
-            { text: "working", start: 2.9, end: 3.3 },
-            { text: "in", start: 3.3, end: 3.5 },
-            { text: "here.", start: 3.5, end: 3.8 },
-            { text: "You", start: 3.8, end: 4.0 },
-            { text: "know", start: 4.0, end: 4.3 },
-            { text: "you’re", start: 4.3, end: 4.6 },
-            { text: "not", start: 4.6, end: 4.8 },
-            { text: "allowed", start: 4.8, end: 5.2 },
-            { text: "to", start: 5.2, end: 5.4 },
-            { text: "play", start: 5.4, end: 5.6 },
-            { text: "football", start: 5.6, end: 6.0 },
-            { text: "in", start: 6.0, end: 6.2 },
-            { text: "the", start: 6.2, end: 6.4 },
-            { text: "kitchen.", start: 6.4, end: 6.8 }
+            { text: "in the", start: 1.8, end: 2.0 },
+            { text: "garden,", start: 2.0, end: 2.4 },
+            { text: "I’m", start: 2.4, end: 2.7 },
+            { text: "working", start: 2.7, end: 3.0 },
+            { text: "in here.", start: 3.0, end: 3.5 },
+            { text: "You", start: 3.5, end: 3.8 },
+            { text: "know", start: 3.8, end: 4.1 },
+            { text: "you’re", start: 4.1, end: 4.4 },
+            { text: "not", start: 4.4, end: 4.7 },
+            { text: "allowed", start: 4.7, end: 5.0 },
+            { text: "to play", start: 5.0, end: 5.3 },
+            { text: "football", start: 5.3, end: 5.6 },
+            { text: "in the", start: 5.6, end: 5.9 },
+            { text: "kitchen.", start: 5.9, end: 6.0 }
           ]
         },
 

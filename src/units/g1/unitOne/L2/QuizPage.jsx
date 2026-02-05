@@ -182,8 +182,7 @@ export const QuizPage = () => {
                     {renderAnswerGif("q3", "0")}
                   </li>
                   <li>
-                    <p> He talked with Peter about building toy  <br />
-                      aeroplanes.</p>
+                    <div className="w-full lg:max-w-80"><p className="inline-block break-words max-w-full"> He talked with Peter about building toy aeroplanes.</p></div>
                     <input
                       type="radio"
                       name="q3"

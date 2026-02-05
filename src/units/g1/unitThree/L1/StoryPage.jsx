@@ -49,10 +49,10 @@ export const StoryPage = () => {
       subtitles: [
         {
           start: 18.5,
-          end: 19.5,
+          end: 21.0,
           words: [
-            { text: "Hello", start: 18.5, end: 18.7 },
-            { text: "kids", start: 18.7, end: 18.9 },
+            { text: "Hello,", start: 19.0, end: 19.5 },
+            { text: "kids.", start: 19.5, end: 20.0 },
           ],
         },
       ],
@@ -124,7 +124,7 @@ export const StoryPage = () => {
             { text: "are", start: 0.9, end: 1.2 },
             { text: "six", start: 1.2, end: 1.5 },
             { text: "chores", start: 1.5, end: 1.8 },
-            { text: "here", start: 1.8, end: 2.1 }
+            { text: "here.", start: 1.8, end: 2.1 }
           ],
         },
 
@@ -265,7 +265,7 @@ export const StoryPage = () => {
     },
     {
       videoIndex: 1,
-      start: 18.5,
+      start: 19.5,
       end: 24.0,
       words: [
         { text: "He", start: 19.6, end: 19.9 },
@@ -348,7 +348,7 @@ export const StoryPage = () => {
       start: 10.0,
       end: 13.8,
       words: [
-        { text: "Then", start: 11.1, end: 11.4 },
+        { text: "They", start: 11.1, end: 11.4 },
         { text: "then", start: 11.4, end: 11.7 },
         { text: "plan", start: 11.7, end: 12.0 },
         { text: "a", start: 12.0, end: 12.3 },

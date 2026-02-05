@@ -1,4 +1,4 @@
-import { Suspense, lazy, useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Home, PlayCircle, ChevronLeft, Menu } from "lucide-react";
 import { AnimatedBackground } from "./AnimatedBackground";
