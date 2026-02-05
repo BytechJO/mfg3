@@ -189,7 +189,7 @@ export const QuizPage = () => {
                   {renderAnswerGif("q3", "1")}
                 </li>
                 <li>
-                  <p> Emma doesn’t like hugging as much as<br/> Molly.</p>
+                  <div className="w-80"><p> Emma doesn’t like hugging as much as Molly.</p></div>
                   <input
                     type="radio"
                     name="q3"

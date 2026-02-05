@@ -32,21 +32,29 @@ body {
   width: 100%;
 }
 /* استعلام الوسائط لأجهزة iPad (العرض بين 768 و 1024 بكسل) */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .content {
     font-size: 18px;
-  }
 
+  }
+  #submitBtn{
+    top:120%;
+  }
   .story-pages-container {
     width: 88%;
     margin-left: 9%;
   }
-
+.questions{
+    margin-top: 5%;
+}
+  .bg-img{
+    height: 35vh;
+  }
   .Q1,
   .Q2,
   .Q3 {
     margin-left: 80px;
-    margin-bottom: 0rem;
+    margin-top: 1%;
     font-size: 0.7rem;
     left: 2%;
   }
@@ -226,12 +234,12 @@ body {
   justify-content: center;
   margin-bottom: 60px;
 }
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   #submitBtn {
     bottom: 27%;
   }
-}
-@media (max-width: 1025px) {
+} */
+@media screen and (max-width: 1025px) {
   #p3 .content {
     left: 10%;
     top: 37px;
@@ -248,7 +256,7 @@ body {
     left: 10%;
   }
   #p3 li p {
-    width: 30%;
+    width: 45%;
   }
   #p3 li input[type="radio"] {
     left: 30%;
@@ -328,12 +336,13 @@ body {
 
   #submitBtn {
     /* left: 65% !important; */
-            top: 65%;
+            top: 68%;
     width: clamp(70px, 30vw, 120px);
     height: clamp(25px, 6vw, 30px);
     font-size: 0.9rem;
   }
 
+  
   .story-pages-container {
     flex-direction: column;
     gap: 10px;

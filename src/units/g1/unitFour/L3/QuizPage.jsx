@@ -73,12 +73,12 @@ export const QuizPage = () => {
 
   return (
     <div className="story-pages-container">
-      <div className="w-full max-w-6xl">
-        <div className="paper animate__animated animate__backInDown" id="p3">
+      <div className="w-full">
+        <div className="paper animate__animated animate__backInDown u4l3" id="p3">
           <img src={Q1Image} alt="Background" className="bg-img" />
 
           <div className="content">
-            <div className="questions text-sm">
+            <div className="questions lg:text-sm">
               {/* Q1 */}
               <div className="Q1">
                 <span>Why did Derrick feel upset?</span>
