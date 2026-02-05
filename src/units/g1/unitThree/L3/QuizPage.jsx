@@ -85,8 +85,8 @@ export const QuizPage = () => {
           <img src={Q1Image} alt="Background" className="bg-img" />
 
           <div className="content quizfix">
-            <div className="questions text-sm">
-              <div className="Q1">
+            <div className="questions text-[93%]">
+              <div className="Q1 lg:mt-[-3%]">
                 <span>What did Brian ask Mr. Percy?</span>
                 <ul>
                   <li>

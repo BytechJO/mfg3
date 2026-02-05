@@ -18,7 +18,7 @@ const Star = ({ marked, starId, onClick, onMouseOver }) => {
   );
 };
 
-const StarRating = ({ value }) => {
+const StarRating = ({ value, onChange  }) => {
   const [rating, setRating] = useState(parseInt(value) || 0);
   const [selection, setSelection] = useState(0);
 
@@ -33,6 +33,7 @@ const StarRating = ({ value }) => {
 
   const handleClick = (e) => {
     const starId = e.currentTarget.dataset.starId; // بدل target
+    onChange?.(starId);
     if (starId) setRating(starId);
   };
 

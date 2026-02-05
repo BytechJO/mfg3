@@ -86,9 +86,9 @@ export const QuizPage = () => {
           <img src={Q1Image} alt="Background" className="bg-img" />
 
           <div className="content">
-            <div className="questions text-sm">
+            <div className="questions text-[91%]">
               {/* Q1 */}
-              <div className="Q1 lg:mt-[-1%]">
+              <div className="Q1 lg:mt-[-2.5%]">
                 <span>
                   How did David and Milo stay good friends <br /> <div className="line-break">even with their</div>
                   differences?

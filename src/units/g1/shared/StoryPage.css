@@ -697,7 +697,6 @@ html {
 .feedquiz {
   background: transparent;
   border: none;
-  cursor: pointer;
   padding: 8px;
   border-radius: 50%;
   display: flex;
@@ -1084,7 +1083,6 @@ html {
   align-items: center;
   justify-content: center;
   color: white;
-  cursor: pointer;
   transition: all 0.3s ease;
   pointer-events: auto;
   z-index: 100000000;

@@ -67,7 +67,7 @@ const FeedbackWrapper = () => {
   };
 
   const handlePrevious = () => {
-    navigate(-2);
+    navigate(-1);
   };
 
   if (!Component) return <div>feedback not found</div>;

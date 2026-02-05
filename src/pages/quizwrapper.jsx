@@ -95,7 +95,12 @@ export default function VideoPlayerPage() {
             <Component />
           </motion.div>
         </div>
-        <button onClick={handleSkip} className="feedquiz right">
+        {/* onClick={handleSkip} */}
+        <button  
+        disabled
+        className="feedquiz right cursor-not-allowed opacity-50"
+        title="You should solve and check the answers first"
+        >
           <ChevronRight className="w-8 h-8 z-[10000]" />
         </button>
       </div>
@@ -161,8 +166,7 @@ export default function VideoPlayerPage() {
                relative z-50 right-40
                p-2 rounded-md border
                border-[#b99cfa] text-[#6B40C8]
-               hover:bg-purple-50
-             "
+               hover:bg-purple-50"
               >
                 <Menu className="w-5 h-5" />
               </button>
