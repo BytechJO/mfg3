@@ -706,6 +706,7 @@ export const StoryPage = () => {
         setTimeout(() => {
           setShowFeedback(false);
           setShowBanner(false);
+          handleNext();
         }, 2000);
       }
 
