@@ -523,17 +523,15 @@ export const StoryPage = () => {
   };
 
   const handleNext = () => {
-    try {
-      if (currentVideo === videos.length - 1) {
+    if (currentVideo === videos.length - 1) {
+      // الانتقال بعد تأخير
+      setTimeout(() => {
         navigate(`/unit/${unitId}/lesson/${lessonId}/quiz`);
-      } else {
-        setCurrentVideo(prev => prev + 1);
-        setShowBanner(false);
-      }
-    } catch (error) {
-      console.log(error);
+      }, 500); // تأخير نصف ثانية
+    } else {
+      setCurrentVideo((prev) => prev + 1);
+      setShowBanner(false);
     }
-
   };
 
 

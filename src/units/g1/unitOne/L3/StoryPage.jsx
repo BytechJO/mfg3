@@ -912,11 +912,14 @@ export const StoryPage = () => {
     setCurrentVideo(prev => (prev > 0 ? prev - 1 : videos.length - 1));
     setShowBanner(false);
   };
-  const handleNext = () => {
+ const handleNext = () => {
     if (currentVideo === videos.length - 1) {
-      navigate(`/unit/${unitId}/lesson/${lessonId}/quiz`);
+      // الانتقال بعد تأخير
+      setTimeout(() => {
+        navigate(`/unit/${unitId}/lesson/${lessonId}/quiz`);
+      }, 500); // تأخير نصف ثانية
     } else {
-      setCurrentVideo(prev => prev + 1);
+      setCurrentVideo((prev) => prev + 1);
       setShowBanner(false);
     }
   };

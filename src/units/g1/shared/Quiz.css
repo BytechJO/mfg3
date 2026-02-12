@@ -801,12 +801,14 @@ body {
 }
 
 .questions {
-  counter-reset: question 0; 
+  counter-reset: question 0;
+  z-index: 900000000000 !important; 
 }
 
 .questions > div > span {
   counter-increment: question; 
   font-weight: bold;
+  z-index: 900000000000 !important;
 }
 
 .questions > div > span::before {
@@ -815,7 +817,8 @@ body {
   background: #e2a02d;
   border-radius: 60%;
   color: #fff;
-  padding: 2px 7px 3px 6px; 
+  padding: 2px 7px 3px 6px;
+  z-index: 900000000000 !important; 
 }
 
 .line-break {
@@ -841,7 +844,6 @@ body {
   }
 }
 
-/* Galaxy Z Fold 5 folded (cover) */
 @media (orientation: portrait) and (min-width: 340px) and (max-width: 460px) {
   #p3 li input[type="radio"] {
     left: 76%;
